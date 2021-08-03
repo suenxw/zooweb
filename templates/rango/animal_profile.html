@@ -1,0 +1,77 @@
+{% extends 'rango/base_bootstrap.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Profile for {{ selected_animal.animal_name }}
+{% endblock %}
+
+{% block body_block %}
+<div class="jumbotron p-4">
+    <div class="container">
+        <h1 class="jumbotron-heading">{{ selected_animal.animal_name }}'s Profile</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% if selected_animal.picture %}
+            <img src="{{ MEDIA_URL }}{{ selected_animal.picture }}" width="300" height="300" alt="{{ selected_animal.animal_name }}'s profile image" />
+        {% else %}
+            <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.jpg" width="300" height="300" alt="Default animal avatar" />
+        {% endif %}
+        <br />
+        <div>
+            Animal Name:{{ selected_animal.animal_name }}<br/>
+            Brief:{{ selected_animal.brief }}
+            <div>
+                <strong id="like_count">{{ selected_animal.likes }}</strong> likes
+                {% if user.is_authenticated %}
+                <button id="like_btn" data-animalid="{{ selected_animal.id }}" class="btn btn-primary btn-sm" type="button">
+                    <span data-feather="thumbs-up"></span>
+                    Like
+                </button>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+    <section class="comment-area" id="comment-area">
+        <hr>
+        <h4>You can post your comments here...</h4>
+        <form role="form" id="comment_form" method="post" action="{% url 'rango:post_comment' selected_animal.animal_name user.username %}">
+            {% csrf_token %}
+            {% for hidden in form.hidden_fields %}
+                {{ hidden }}
+            {% endfor %}
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.help_text }}<br />
+                {{ field }}<br />
+                <div class="p-2"></div>
+            {% endfor %}
+            <br />
+            <button class="btn btn-primary" type="submit" name="submit">Post</button>
+            <div class="p-5"></div>
+        </form>
+
+        <div class="comment-list-panel">
+            <h6>Comment List, total <span>{{ comments.count }}</span></h6>
+            <ul class="comment-list list-unstyled">
+                {% for comment in comments %}
+                    <li class="comment-item">
+                        <span class="nickname">{{ comment.username }}</span>
+                        <time class="submit-date"
+                              datetime="{{ comment.created_time }}">{{ comment.created_time }}</time>
+                        <div class="text">
+                            {{ comment.content }}
+                        </div>
+                    </li>
+                {% empty %}
+                    NO COMMENT YET
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}
