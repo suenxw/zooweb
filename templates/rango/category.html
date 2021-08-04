@@ -13,12 +13,15 @@
 
     <ul class="nav nav-list flex-column">
         <li class="nav-item">Type to find a Animal</li>
+
         <form role="form" id="search_form" method="POST" action="{% url 'rango:search_animal' category.slug %}">
             {% csrf_token %}
             <li class="nav-item">
             <input class="search-query form-control" type="text" name="suggestion" value="" id="suggestion" />
             </li>
-            <button class="btn btn-primary" type="submit" name="search">search</button>
+            <br/>
+            <button class="btn btn-primary" type="submit" name="search">search</button><br />
+            <br/>
         </form>
 
     </ul>
