@@ -20,7 +20,7 @@
             <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="300" height="300" alt="Default avatar" />
         {% endif %}
         <br />
-        <div>
+        <div class="updateProfile">
             {% if selected_user == user %}
             <form method="post" action="." enctype="multipart/form-data">
                 {% csrf_token %}
