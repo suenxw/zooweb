@@ -125,16 +125,34 @@ li{
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
-
     background-repeat: round;
     font-family: "Hiragino Sans";
-    padding-left: 40%;
+    padding-left: 30%;
     height: 300px;
 }
 
 .updateProfile{
+    color: #E9A20B;
+    font-weight: bolder;
+    font-size: 20px;
     padding-top: 50px;
     padding-left: 150px;
     padding-right: 50px;
-    background: coral;
+}
+
+#profileHeader{
+    margin:0;padding:0;
+    height: 300px;
+    background-position: center;
+    background-image: url("https://imgix.bustle.com/inverse/1d/70/d1/86/5b1a/4df9/8080/951c30442dc1/bird-migration-40238421920jpg.jpeg?w=2000&h=640&fit=crop&crop=faces&auto=format%2Ccompress&blend=000000&blendAlpha=45&blendMode=normal");
+}
+
+#profileBody{
+    border: 10px #333333;
+}
+
+#profileBottom{
+    height: 150px;
+     background-position: -50px -370px;
+    background-image: url("https://www.sailorsforthesea.org/sites/default/files/homepage_2-adj.jpg");
 }

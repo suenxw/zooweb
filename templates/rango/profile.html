@@ -6,19 +6,19 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
-    <div class="container">
-        <h1 class="jumbotron-heading">{{ selected_user.username }}'s Profile</h1>
-    </div>
+<div class="jumbotron p-4" id="profileHeader">
+    <h1 class="jumbotron-heading">{{ selected_user.username }}'s Profile</h1>
 </div>
 
 <div class="container">
     <div class="row">
-        {% if user_profile.picture %}
-            <img src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="300" height="300" alt="{{ selected_user.username }}'s profile image" />
-        {% else %}
-            <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="300" height="300" alt="Default avatar" />
-        {% endif %}
+        <div id="profileBody">
+            {% if user_profile.picture %}
+                <img src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="300" height="300" alt="{{ selected_user.username }}'s profile image" />
+            {% else %}
+                <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="300" height="300" alt="Default avatar" />
+            {% endif %}
+        </div>
         <br />
         <div class="updateProfile">
             {% if selected_user == user %}
@@ -38,22 +38,23 @@
                     <input type="file" name="picture" id="picture" >
                 </p>
 
-                <input type="submit" value="Update" />
+                <input class="profileUpdate" type="submit" value="Update" />
             </form>
             {% else %}
             <p>
                 <strong>Email: </strong>
                 <a href="{{ user_profile.user.email }}">{{ user_profile.user.email }}</a>
                 <br>
-                <hr>
                 <strong>Phone: </strong>
                 <a href="{{ user_profile.phone }}">{{ user_profile.phone }}</a>
             </p>
             {% endif %}
         </div>
     </div>
+</div>
 
-    <img src="https://media.istockphoto.com/vectors/zoo-park-tickets-with-african-and-forest-animals-vector-id1057846494?k=6&m=1057846494&s=612x612&w=0&h=Zr4O8VhCYRW5wWceQgD6LlXI4-r-tGJWYOQ9WeWH42E=">
+<div id="profileBottom">
 
 </div>
+
 {% endblock %}
