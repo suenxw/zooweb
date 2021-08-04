@@ -17,23 +17,37 @@
         {% if user_profile.picture %}
             <img src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="300" height="300" alt="{{ selected_user.username }}'s profile image" />
         {% else %}
-            <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg" alt="Default avatar" />
+            <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="300" height="300" alt="Default avatar" />
         {% endif %}
         <br />
         <div>
             {% if selected_user == user %}
             <form method="post" action="." enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form.as_p }}
+{#                {{ form.as_p }}#}
+                <p>
+                    phone:
+                    <input type="text" name="phone" id="phone" value="{{ user_profile.phone }}">
+                </p>
+                <p>
+                    email：
+                    <input type="email" name="email" id='email' value="{{ user_profile.user.email }}">
+                </p>
+                <p>
+                    picture
+                    <input type="file" name="picture" id="picture" >
+                </p>
 
                 <input type="submit" value="Update" />
             </form>
             {% else %}
             <p>
-                <strong>email: </strong>
+                <strong>Email: </strong>
                 <a href="{{ user_profile.user.email }}">{{ user_profile.user.email }}</a>
-                <strong>phone: </strong>
-                <a href="{{ user_profile.phone }}">{{ suser_profile.phone }}</a>
+                <br>
+                <hr>
+                <strong>Phone: </strong>
+                <a href="{{ user_profile.phone }}">{{ user_profile.phone }}</a>
             </p>
             {% endif %}
         </div>

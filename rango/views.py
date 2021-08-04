@@ -124,17 +124,6 @@ def visitor_cookie_handler(request):
     request.session['visits'] = visits
 
 
-# def search(request):
-#     result_list = []
-#     query = ''
-#     if request.method == 'POST':
-#         query = request.POST['query'].strip()
-#         if query:
-#             result_list = run_query(query)
-#
-#     return render(request, 'rango/search.html', {'result_list': result_list, 'query': query})
-
-
 class RegisterProfileView(View):
     @method_decorator(login_required)
     def get(self, request):
@@ -196,6 +185,8 @@ class ProfileView(View):
 
         if form.is_valid():
             form.save(commit=True)
+            user.email = request.POST['email']
+            user.save()
             return redirect(reverse('rango:profile',
                                     kwargs={'username': username}))
         else:
@@ -224,7 +215,6 @@ class AnimalProfileView(View):
         except animal.DoesNotExist:
             animal = None
             comments = None
-
 
         form = CommentForm()
 
@@ -356,4 +346,3 @@ def CommentPostView(request, animal_name, username):
                     'form': form,
                     'comments': None}
     return render(request, 'rango/animal_profile.html', context=context_dict)
-
