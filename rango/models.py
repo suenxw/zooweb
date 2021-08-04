@@ -13,6 +13,8 @@ class AnimalCategory(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.category_name)
         super(AnimalCategory, self).save(*args, **kwargs)
+        if self.views < 0:
+            self.views = 0
 
     class Meta:
         verbose_name_plural = 'Animal Categories'
