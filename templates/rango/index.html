@@ -6,17 +6,17 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
+<div class="jumbotron p-0">
     <div class="container">
-        <h1 class="jumbotron-heading">Rango says...</h1>
+        <h4 class="jumbotron-heading">Welcome.</h4>
         <div>
-            <h2 class="h2">
+            <h5 class="h5">
             {% if user.is_authenticated %}
-                howdy {{ user.username }}!
+                Hey! {{ user.username }}!
             {% else %}
                 hey there partner!
             {% endif %}
-            </h2>
+            </h5>
         </div>
     </div>
 </div>
@@ -26,7 +26,7 @@
         <div class="col-md-6">
             <div class="card mb-6">
                 <div class="card-body">
-                    <h2>Most Viewed Categories</h2>
+                    <h5>Most Viewed Categories</h5>
                     <p class="card-text">
                     {% if categories %}
                     <ul class="list-group">
@@ -45,7 +45,7 @@
         <div class="col-md-6">
             <div class="card mb-6">
                 <div class="card-body">
-                    <h2>Most Liked Animals</h2>
+                    <h5>Most Liked Animals</h5>
                     <p class="card-text">
                     {% if animals %}
                     <ul class="list-group">
@@ -63,7 +63,15 @@
             </div>
         </div>
     </div>
+{#    <div id="map"></div>#}
+
 </div>
 
-{#<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />#}
+    <hr >
+
+<div id="map" style="width: auto;height: 300px"></div>
+
+
+
+
 {% endblock %}
