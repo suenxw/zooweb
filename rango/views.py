@@ -18,9 +18,7 @@ def index(request):
     category_list = AnimalCategory.objects.order_by('-views')[:5]
     animal_list = Animal.objects.order_by('-likes')[:5]
 
-    context_dict = {}
-    context_dict['categories'] = category_list
-    context_dict['animals'] = animal_list
+    context_dict = {'categories': category_list, 'animals': animal_list}
 
     visitor_cookie_handler(request)
 
