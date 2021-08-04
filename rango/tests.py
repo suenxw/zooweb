@@ -16,7 +16,7 @@ class AnimalCategoryMethodTests(TestCase):
         self.assertEqual((category.views >= 0), True)
 
 
-class IndexViewTests(TestCase):
+class HomePageTests(TestCase):
 
     def test_index_view_with_no_categories(self):
         response = self.client.get(reverse('rango:index'))
@@ -24,13 +24,5 @@ class IndexViewTests(TestCase):
         self.assertContains(response, 'There are no categories present.')
         self.assertQuerysetEqual(response.context['categories'], [])
 
-    def test_response(self):
-        """
-        Checks whether the view returns the required string to the client.
-        """
-        response = self.client.get(reverse('rango:about'))
 
-        self.assertEqual(response.status_code, 200,)
-        self.assertContains(response, "Welcome to North Park Zoo!"
-                            )
 # Create your tests here.
