@@ -6,8 +6,7 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-0">
-    <div class="container">
+<div class="jumbotron p-0" id="indexContainner">
         <div  id="welcom_header" class="jumbotron-heading">
             <h1>Welcome to North Park Zoo!</h1>
             <span class="h5">
@@ -18,66 +17,59 @@
             {% endif %}
             </span>
         </div>
-    </div>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <div class="card mb-6">
-                <div class="card-body">
-                    <h5 style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
-                    font-family: 'American Typewriter';"
-                    >Most Viewed Categories</h5>
-                    <p class="card-text">
-                    {% if categories %}
-                    <ul class="list-group">
-                    {% for category in categories %}
-                        <li style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
-                            text-align: center;
-                            font-family: 'American Typewriter';
-                            font-size: 25px;"
-                            class="list-group-item"><a href="{% url 'rango:show_category' category.slug %}">
-                            {{ category.category_name }}</a></li>
-                    {% endfor %}
-                    </ul>
-                    {% else %}
-                    <strong>There are no categories present.</strong>
-                    {% endif %}
-                    </p>
-                </div>
+            <div class="card-body">
+                <h5>Most Viewed Categories</h5>
+                <p class="card-text">
+                {% if categories %}
+                <ul class="list-group">
+                {% for category in categories %}
+                    <li id="indexList" class="list-group-item"><a href="{% url 'rango:show_category' category.slug %}">
+                        {{ category.category_name }}</a></li>
+                {% endfor %}
+                </ul>
+                {% else %}
+                <strong>There are no categories present.</strong>
+                {% endif %}
+                </p>
             </div>
         </div>
 
         <div class="col-md-6">
-            <div class="card mb-6">
-                <div class="card-body">
-                    <h5 style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
-                    font-family: 'American Typewriter';"
-                    >Most Liked Animals</h5>
-                    <p class="card-text">
-                    {% if animals %}
-                    <ul class="list-group">
-                    {% for animal in animals %}
-                        <li style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
-                            text-align: center;
-                            font-family: 'American Typewriter';
-                            font-size: 25px;"
-                            class="list-group-item">{{ animal.animal_name }}</li>
-                    {% endfor %}
-                    </ul>
-                    {% else %}
-                    <strong>There are no pages present.</strong>
-                    {% endif %}
-                    </p>
-                </div>
+            <div class="card-body">
+                <h5>Most Liked Animals</h5>
+                <p class="card-text">
+                {% if animals %}
+                <ul class="list-group">
+                {% for animal in animals %}
+                    <li id="indexList" class="list-group-item">{{ animal.animal_name }}</li>
+                {% endfor %}
+                </ul>
+                {% else %}
+                <strong>There are no pages present.</strong>
+                {% endif %}
+                </p>
             </div>
         </div>
     </div>
 
-</div>
-
     <hr >
-<div id="map" style="width: auto;height: 500px"></div>
+    <div id="map" style="width: auto;height: 400px"></div>
+
+    <br>
+
+    <div id="indexBottom">
+        <span class="s1">Use of Cookies on NPZ website</span>
+        <span>Privacy Policy</span>
+        <span>Terms and Conditions</span>
+        <span>Legal Information</span>
+        <span>Contact us</span>
+    </div>
+
+</div>
 
 {% endblock %}

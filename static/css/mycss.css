@@ -1,4 +1,5 @@
 .myheader {
+    margin:0;padding:0;
     text-align: center;
     color: #E9A20B;
     font-family: "Heiti SC";
@@ -6,14 +7,13 @@
     background-attachment: fixed;
 }
 
-*{margin:0;padding:0;}
-
 div{
     font-size: 18px;
     line-height: 26px;
 }
 
 .myabout{
+    margin:0;padding:0;
     background-image: url("static/images/wood-sand.jpg");
 }
 
@@ -33,10 +33,12 @@ li{
 }
 
 #welcom_header{
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 50px;
     width: auto;
     height: 550px;
-    background-position: -350px -60px;
+    background-position: -320px -60px;
     background-image: url("https://www.edinburghzoo.org.uk/media/8570/high-edinburgh-home-slider.jpg?crop=0,0,0.12017268077518692,0.12017268077518696&cropmode=percentage&width=1576&height=833");
 }
 
@@ -57,6 +59,43 @@ li{
     height: 230px;
 }
 
+#indexBottom{
+    background: peru;
+}
+
+#indexBottom span{
+    color: #FFFFFF;
+    text-align: center;
+    width: 190px;
+    background-color: peru;
+    display: inline-block;
+}
+
+#indexBottom .s1{
+    width: 300px;
+}
+
+.container, #indexContainner{
+    /*margin:0;*/
+    background: aquamarine;
+    background-image: url(https://data.1freewallpapers.com/detail/field-grass-lawn-green.jpg);
+    /*background: rgba(0, 0, 0, 0.1);*/
+}
+
+.col-md-6 .card-body h5{
+    color: crimson;
+    text-align: center;
+    background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
+    font-family: 'American Typewriter';
+}
+
+#indexList{
+    background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
+    text-align: center;
+    font-family: 'American Typewriter';
+    font-size: 25px;
+}
+
 #addCategory{
     color: #FFFFFF;
     background-image: url("https://s.rfi.fr/media/display/84de4e76-8ae8-11ea-8972-005056bff430/w:1280/p:16x9/Tiger%20in%20Indonesian%20zoo.webp");
@@ -73,6 +112,24 @@ li{
 #btnSubmit{
     background: #E9A20B;
     color: #FFFFFF;
+}
+
+#btnSubmit:hover{
+    background: darkgoldenrod;
+    color: #FFFFFF;
+}
+
+.addCategoryForm{
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX46749229.jpg");
+    color: firebrick;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-repeat: round;
+    font-family: "Hiragino Sans";
+    padding-left: 40%;
+    height: 300px;
 }
 
 .updateProfile{
