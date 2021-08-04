@@ -1,0 +1,20 @@
+.myheader {
+    text-align: center;
+    color: #E9A20B;
+    font-family: "Heiti SC";
+    background-image: url("static/images/wood-green.jpg");
+    background-attachment : fixed;
+}
+
+div{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.myabout{
+    background-image: url("static/images/wood-sand.jpg");
+}
+
+h2{
+    text-align: center;
+}
