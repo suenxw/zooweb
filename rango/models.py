@@ -27,8 +27,11 @@ class Animal(models.Model):
     animal_name = models.CharField(max_length=NAME_MAX_LENGTH, unique=True)
     category = models.ForeignKey(AnimalCategory, on_delete=models.CASCADE)
 
+    size = models.TextField()
+    distribution_area = models.TextField()
+
     likes = models.IntegerField(default=0)
-    brief = models.CharField(max_length=NAME_MAX_LENGTH)
+    brief = models.TextField()
     picture = models.ImageField(upload_to='animals_images', blank=True)
 
     def __str__(self):
@@ -38,7 +41,6 @@ class Animal(models.Model):
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    # website = models.URLField(blank=True)
     phone = models.CharField(max_length=15)
     picture = models.ImageField(upload_to='profile_images', blank=True)
 

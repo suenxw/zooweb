@@ -17,12 +17,25 @@
         {% if selected_animal.picture %}
             <img src="{{ MEDIA_URL }}{{ selected_animal.picture }}" width="300" height="300" alt="{{ selected_animal.animal_name }}'s profile image" />
         {% else %}
-            <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.jpg" width="300" height="300" alt="Default animal avatar" />
+            <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="300" height="300" alt="Default animal avatar" />
         {% endif %}
         <br />
-        <div>
-            Animal Name:{{ selected_animal.animal_name }}<br/>
-            Brief:{{ selected_animal.brief }}
+        <div class="comment-list-panel">
+            <ul class="comment-list list-unstyled">
+                <li class="comment-item">
+                    Animal Name: {{ selected_animal.animal_name }}
+                </li>
+                <li class="comment-item">
+                    Brief: {{ selected_animal.brief }}
+                </li>
+                <li class="comment-item">
+                    Size: {{ selected_animal.size }}
+                </li>
+                <li class="comment-item">
+                    Distribution area: {{ selected_animal.distribution_area }}
+                </li>
+            </ul>
+            <hr>
             <div>
                 <strong id="like_count">{{ selected_animal.likes }}</strong> likes
                 {% if user.is_authenticated %}
@@ -37,8 +50,10 @@
     </div>
 
     <section class="comment-area" id="comment-area">
+        <br>
         <hr>
-        <h4>You can post your comments here...</h4>
+        <hr>
+        <h5>You can post your comments here...</h5>
         <form role="form" id="comment_form" method="post" action="{% url 'rango:post_comment' selected_animal.animal_name user.username %}">
             {% csrf_token %}
             {% for hidden in form.hidden_fields %}
