@@ -20,7 +20,13 @@
             </li>
             <button class="btn btn-primary" type="submit" name="search">search</button>
         </form>
+
     </ul>
+    {% if user.is_superuser %}
+         <a href="{% url 'rango:add_animal' category.slug %}">
+             <button class="btn btn-primary">Add Animal</button>
+         </a>
+    {% endif %}
     <p>Visits: {{ category.views }}</p>
 
     <hr>
@@ -37,10 +43,9 @@
                                     {% if animal.picture %}
                                         <img src="{{ MEDIA_URL }}{{ animal.picture }}" width="64" height="64" alt="Profile picture for {{ animal.animal_name }}" />
                                     {% else %}
-                                        <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.jpg" width="64" height="64" alt="Default animal avatar" />
+                                        <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="64" height="64" alt="Default animal avatar" />
                                     {% endif %}
                                 </a>
-
                             </h2>
                             <h5 class="list-group-item-text">
                                 Animal name: {{ animal.animal_name }}<br/>
@@ -55,9 +60,7 @@
                 <strong>No animals currently in category.</strong>
             {% endif %}
 
-            {% if user.is_authenticated %}
-            <a href="{% url 'rango:add_animal' category.slug %}">Add Animal</a> <br />
-            {% endif %}
+
         {% else %}
         <p>The specified category does not exist.</p>
         {% endif %}

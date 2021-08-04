@@ -14,11 +14,9 @@ urlpatterns = [
     path('category/<slug:category_name_slug>/search', views.SearchAnimalView.as_view(), name='search_animal'),
 
     url(r'^add_category/$',views.add_category,name='add_category'),
-    # path('category/<slug:category_name_slug>/add_page/', views.add_page, name='add_page'),
     path('category/<slug:category_name_slug>/add_animal/', views.add_animal, name='add_animal'),
     path('restricted/', views.restricted, name='restricted'),
-    # path('logout/', views.user_logout, name='logout'),
-    # url(r'search/$', views.search, name='search'),
+
     path('register_profile/', views.RegisterProfileView.as_view(), name='register_profile'),
     path('profile/<username>/', views.ProfileView.as_view(), name='profile'),
     path('profiles/', views.ListProfilesView.as_view(), name='list_profiles'),
