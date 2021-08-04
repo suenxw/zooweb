@@ -8,15 +8,15 @@
 {% block body_block %}
 <div class="jumbotron p-0">
     <div class="container">
-        <h4 class="jumbotron-heading">Welcome.</h4>
-        <div>
-            <h5 class="h5">
+        <div  id="welcom_header" class="jumbotron-heading">
+            <h1>Welcome to North Park Zoo!</h1>
+            <span class="h5">
             {% if user.is_authenticated %}
                 Hey! {{ user.username }}!
             {% else %}
-                hey there partner!
+                Hey there partner!
             {% endif %}
-            </h5>
+            </span>
         </div>
     </div>
 </div>
@@ -26,12 +26,19 @@
         <div class="col-md-6">
             <div class="card mb-6">
                 <div class="card-body">
-                    <h5>Most Viewed Categories</h5>
+                    <h5 style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
+                    font-family: 'American Typewriter';"
+                    >Most Viewed Categories</h5>
                     <p class="card-text">
                     {% if categories %}
                     <ul class="list-group">
                     {% for category in categories %}
-                        <li class="list-group-item"><a href="{% url 'rango:show_category' category.slug %}">{{ category.category_name }}</a></li>
+                        <li style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
+                            text-align: center;
+                            font-family: 'American Typewriter';
+                            font-size: 25px;"
+                            class="list-group-item"><a href="{% url 'rango:show_category' category.slug %}">
+                            {{ category.category_name }}</a></li>
                     {% endfor %}
                     </ul>
                     {% else %}
@@ -45,12 +52,18 @@
         <div class="col-md-6">
             <div class="card mb-6">
                 <div class="card-body">
-                    <h5>Most Liked Animals</h5>
+                    <h5 style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
+                    font-family: 'American Typewriter';"
+                    >Most Liked Animals</h5>
                     <p class="card-text">
                     {% if animals %}
                     <ul class="list-group">
                     {% for animal in animals %}
-                        <li class="list-group-item">{{ animal.animal_name }}</li>
+                        <li style="background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
+                            text-align: center;
+                            font-family: 'American Typewriter';
+                            font-size: 25px;"
+                            class="list-group-item">{{ animal.animal_name }}</li>
                     {% endfor %}
                     </ul>
                     {% else %}
@@ -65,9 +78,6 @@
 </div>
 
     <hr >
-<div id="map" style="width: auto;height: 300px"></div>
-
-
-
+<div id="map" style="width: auto;height: 500px"></div>
 
 {% endblock %}

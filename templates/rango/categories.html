@@ -1,13 +1,35 @@
+<head>
+    <style>
+        *{margin:0;padding:0;}
+        .list{
+            list-style: none;
+        }
+        #list_a{
+            text-indent: 100px;
+            font-family: "Academy Engraved LET";
+            background-color: deepskyblue;
+            color: #FFFFFF;
+            font-size: 30px;
+            line-height: 50px;
+            width: 300px;
+            display:inline-block;
+        }
+        #list_a:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
 <ul>
 {% if categories %}
     {% for c in categories %}
         {% if c == current_category %}
-        <li><strong><a href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></strong></li>
+        <li class="list"><strong><span id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</span></strong></li>
         {% else %}
-        <li><a href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></li>
+        <li><span id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</span></li>
         {% endif %}
     {% endfor %}
 {% else %}
-    <li><strong>There are no categories present.</strong></li>
+    <li  class="list"><strong>There are no categories present.</strong></li>
 {% endif %}
 </ul>

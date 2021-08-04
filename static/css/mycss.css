@@ -3,8 +3,10 @@
     color: #E9A20B;
     font-family: "Heiti SC";
     background-image: url("static/images/wood-green.jpg");
-    background-attachment : fixed;
+    background-attachment: fixed;
 }
+
+*{margin:0;padding:0;}
 
 div{
     font-size: 18px;
@@ -17,4 +19,58 @@ div{
 
 h2{
     text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-style: italic;
+    color: #E9A20B;
+    font-family: "Euphemia UCAS";
+}
+
+li{
+    list-style: none;
+}
+
+#welcom_header{
+    font-size: 50px;
+    width: auto;
+    height: 550px;
+    background-position: -350px -60px;
+    background-image: url("https://www.edinburghzoo.org.uk/media/8570/high-edinburgh-home-slider.jpg?crop=0,0,0.12017268077518692,0.12017268077518696&cropmode=percentage&width=1576&height=833");
+}
+
+#welcom_header h1{
+    color: #E9A20B;
+    font-family: "Microsoft YaHei";
+}
+
+#welcom_header span{
+    color: #E9A20B;
+    font-size: 40px;
+    font-family: "Microsoft YaHei";
+}
+
+.pic_display img{
+    display: inline;
+    width: 283px;
+    height: 230px;
+}
+
+#addCategory{
+    color: #FFFFFF;
+    background-image: url("https://s.rfi.fr/media/display/84de4e76-8ae8-11ea-8972-005056bff430/w:1280/p:16x9/Tiger%20in%20Indonesian%20zoo.webp");
+    height: 400px;
+    background-position: -50px -70px;
+}
+
+.jumbotron-heading{
+    color: #E9A20B;
+    font-size: 60px;
+    font-family: "Hiragino Sans";
+}
+
+#btnSubmit{
+    background: #E9A20B;
+    color: #FFFFFF;
 }
