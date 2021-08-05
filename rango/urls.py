@@ -10,6 +10,8 @@ app_name = 'rango'
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     path('about/', views.about, name='about'),
+    path('gallery/', views.gallery, name='gallery'),
+
     path('category/<slug:category_name_slug>/', views.show_category, name='show_category'),
     path('category/<slug:category_name_slug>/search', views.SearchAnimalView.as_view(), name='search_animal'),
 
