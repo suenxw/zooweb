@@ -10,16 +10,16 @@
     <h1 class="jumbotron-heading">{{ selected_user.username }}'s Profile</h1>
 </div>
 
-<div class="container">
+<div class="container" id="profileBody">
     <div class="row">
-        <div id="profileBody">
+        <div>
             {% if user_profile.picture %}
-                <img src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="300" height="300" alt="{{ selected_user.username }}'s profile image" />
+                <img id="profileBodyPic" src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="260" height="260" alt="{{ selected_user.username }}'s profile image" />
             {% else %}
-                <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="300" height="300" alt="Default avatar" />
+                <img id="profileBodyPic" src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="260" height="260" alt="Default avatar" />
             {% endif %}
         </div>
-        <br />
+
         <div class="updateProfile">
             {% if selected_user == user %}
             <form method="post" action="." enctype="multipart/form-data">

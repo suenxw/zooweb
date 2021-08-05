@@ -6,17 +6,17 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-0" id="indexContainner">
-        <div  id="welcom_header" class="jumbotron-heading">
-            <h1>Welcome to North Park Zoo!</h1>
-            <span class="h5">
-            {% if user.is_authenticated %}
-                Hey! {{ user.username }}!
-            {% else %}
-                Hey there partner!
-            {% endif %}
-            </span>
-        </div>
+<div class="jumbotron p-0" id="welcom_header_container">
+    <div  id="welcom_header" class="jumbotron-heading">
+        <h1>Welcome to North Park Zoo!</h1>
+        <span class="h5">
+        {% if user.is_authenticated %}
+            Hey! {{ user.username }}!
+        {% else %}
+            Hey there partner!
+        {% endif %}
+        </span>
+    </div>
 </div>
 
 <div class="container">

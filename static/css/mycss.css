@@ -71,6 +71,10 @@ ul,li{
     border-radius: 15px;
 }
 
+#welcom_header_container{
+    background-color: #FFFFFF;
+}
+
 #welcom_header{
     padding-top: 10px;
     padding-left: 10px;
@@ -78,7 +82,8 @@ ul,li{
     width: auto;
     height: 550px;
     background-position: -320px -60px;
-    background-image: url("static/images/giraffe.png");
+    background-color: #FFFFFF;
+    /*background-image: url("static/images/giraffe.png");*/
     border-radius: 15px;
 }
 
@@ -116,10 +121,8 @@ ul,li{
     width: 300px;
 }
 
-.container, #indexContainner{
-    background: aquamarine;
+.container{
     background-image: url(static/images/wood-sand.jpg);
-    /*caopingzaicichu!!!!!!!*/
 }
 
 .col-md-6 .card-body h5{
@@ -186,19 +189,27 @@ ul,li{
 }
 
 #profileHeader{
-    margin:0;
+    margin: 0 0 10px;
     padding-top:0;
     height: 220px;
     background-position: -140px -240px;
+    border-radius: 15px;
     background-image: url("static/images/birds.png");
 }
 
 #profileBody{
+    border-radius: 15px;
     border: 10px #333333;
+    margin: 0 0 10px;
+}
+
+#profileBodyPic{
+    margin: 15px 15px 15px 60px;
 }
 
 #profileBottom{
-    height: 200px;
+    border-radius: 15px;
+    height: 220px;
     background-position: -50px -370px;
     background-image: url("static/images/fish.png");
 }
@@ -234,7 +245,7 @@ ul,li{
     border-bottom-right-radius: 25px;
 }
 
-#addAnimalHeader{
+#addAnimalHeader, #animalProfileHeader{
     margin: 10px;
     background-image: url(static/images/wood-green.jpg);
 }
@@ -242,5 +253,15 @@ ul,li{
 #addAnimalBody{
     /*border-radius: 15px;*/
     padding: 20px;
+}
+
+#animalProfilePic img{
+    color: #E9A20B;
+    position: center;
+    padding: 20px;
+}
+
+#comment-area #comment-area-header{
+    color: #E9A20B;
 }
 
