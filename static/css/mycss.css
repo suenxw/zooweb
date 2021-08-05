@@ -3,6 +3,42 @@
       padding:0;
 }
 
+#icon{
+    width: 42px;
+    height: 42px;
+    background-image: url("static/images/icon.png");
+}
+
+#navDec1,#navDec2,#navbarDropdown1,#navbarDropdown2{
+    color: black;
+}
+
+#navDec1{
+    margin-left: 260px;
+    background-color: indianred;
+}
+
+#navDec2{
+    background-color: purple;
+}
+
+#navbarDropdown1{
+    background-color: dodgerblue;
+}
+
+#navbarDropdown2{
+    margin-right: 80px;
+    background-color: darkgreen;
+}
+
+#navDec1:hover,#navDec2:hover,#navbarDropdown1:hover,#navbarDropdown2:hover{
+    color: #E9A20B;
+}
+
+#navDec5:hover{
+    color: #E9A20B;
+}
+
 .myHeader {
     margin-bottom:10px;
     padding:0;
@@ -49,10 +85,17 @@ h3{
 }
 
 #sideBarContainer{
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     background-color: #FFFFFF;
     border: none;
     margin-bottom: 5px;
+}
+
+#categoriesTitle{
+    padding-left: 20%;
+    position: center;
+    font-family: Courier;
+    color: black;
 }
 
 ul,li{
@@ -246,7 +289,6 @@ ul,li{
 
 #profileHeader{
     margin: 0 10px 10px 0;
-    padding-top:0;
     height: 220px;
     background-position: -140px -240px;
     border-radius: 15px;
@@ -318,7 +360,6 @@ ul,li{
     background-image: url(static/images/deer.png);
     border-radius: 15px;
     background-size:cover;
-
 }
 
 #aboutBottomPic img{
@@ -391,3 +432,4 @@ ul,li{
     height: 590px;
     background-image: url(static/images/loginpic.jpg);
 }
+
