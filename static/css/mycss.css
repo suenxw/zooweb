@@ -3,7 +3,7 @@
       padding:0;
 }
 
-.myheader {
+.myHeader {
     margin:0;padding:0;
     text-align: center;
     color: #E9A20B;
@@ -21,7 +21,7 @@ div{
     line-height: 26px;
 }
 
-.myabout{
+.myAbout{
     margin:0;padding:0;
     background-image: url("static/images/wood-sand.jpg");
 }
@@ -76,12 +76,12 @@ ul,li{
     border-radius: 15px;
 }
 
-#welcom_header_container{
+#welcome_header_container{
     margin-right: 10px;
     background-color: #FFFFFF;
 }
 
-#welcom_header{
+#welcome_header{
     padding-top: 10px;
     padding-left: 10px;
     font-size: 50px;
@@ -92,12 +92,12 @@ ul,li{
     border-radius: 15px;
 }
 
-#welcom_header h1{
+#welcome_header h1{
     color: #E9A20B;
     font-family: "Microsoft YaHei";
 }
 
-#welcom_header span{
+#welcome_header span{
     color: #E9A20B;
     font-size: 40px;
     font-family: "Microsoft YaHei";
@@ -140,7 +140,11 @@ ul,li{
     margin: 0;
     background-image: url(static/images/wood-sand.jpg);
 }
-
+.registrationBody{
+    background-image: url(static/images/wood-sand.jpg);
+    border-radius: 0px;
+    margin-left: 0px;
+}
 .col-md-6 .card-body h5{
     color: crimson;
     text-align: center;
@@ -172,7 +176,10 @@ ul,li{
     font-size: 60px;
     font-family: "Hiragino Sans";
 }
-
+.registrationHeading{
+    background: #E9A20B;
+    color: #FFFFFF;
+}
 #btnSubmit{
     background: #E9A20B;
     color: #FFFFFF;
@@ -257,7 +264,7 @@ ul,li{
     border-bottom-right-radius: 15px;
 }
 
-#aboutbottompic img{
+#aboutBottomPic img{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
