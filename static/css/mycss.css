@@ -246,13 +246,15 @@ ul,li{
 }
 
 #addAnimalHeader, #animalProfileHeader{
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     background-image: url(static/images/wood-green.jpg);
 }
 
 #addAnimalBody{
-    /*border-radius: 15px;*/
-    padding: 20px;
+    margin: 0;
+    border-radius: 15px;
+    padding: 40px;
 }
 
 #animalProfilePic img{
