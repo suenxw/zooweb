@@ -6,8 +6,21 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-0" id="welcome_header_container">
-    <div id="welcome_header" class="jumbotron-heading">
+{#<div class="jumbotron p-0" id="indexContainner">#}
+{#        <div  id="welcom_header" class="jumbotron-heading">#}
+{#            <h1>Welcome to North Park Zoo!</h1>#}
+{#            <span class="h5">#}
+{#            {% if user.is_authenticated %}#}
+{#                Hey! {{ user.username }}!#}
+{#            {% else %}#}
+{#                Hey there partner!#}
+{#            {% endif %}#}
+{#            </span>#}
+{#        </div>#}
+{#</div>#}
+
+<div class="container">
+    <div  id="welcom_header" class="jumbotron-heading">
         <h1>Welcome to North Park Zoo!</h1>
         <span class="h5">
         {% if user.is_authenticated %}
@@ -17,9 +30,7 @@
         {% endif %}
         </span>
     </div>
-</div>
-
-<div class="container">
+    <hr>
     <div class="row">
         <div class="col-md-6">
             <div class="card-body">
@@ -58,6 +69,7 @@
     </div>
 
     <hr >
+    You can follow the map...
     <div id="map" style="width: auto;height: 400px"></div>
 
     <br>

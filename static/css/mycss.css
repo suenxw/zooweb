@@ -55,27 +55,31 @@ h3{
 
 ul,li{
     list-style: none;
+    text-align: center;
 }
 
 #list_a{
-    margin:0;padding:0;
-    text-indent: 90px;
-    font-family: "Academy Engraved LET";
-    color: #FFFFFF;
+    /*margin:0;padding:0;*/
+    /*text-indent: 90px;*/
+    /*font-family: "Academy Engraved LET";*/
+    /*color: rgba(2, 2, 2, 0);*/
     font-size: 30px;
-    line-height: 50px;
-    width: 300px;
-    display:inline-block;
+    /*line-height: 50px;*/
+    /*width: 300px;*/
+    /*display:inline-block;*/
+
 }
 
 #list_a:hover{
-    color: #E9A20B;
+    /*color: #E9A20B;*/
+    /*text-align: center;*/
 }
 
 #sidebarList{
     background-position: -100px -5px;
     background-image: url("static/images/dog.png");
     border-radius: 15px;
+
 }
 
 #welcome_header_container{
