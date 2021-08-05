@@ -21,14 +21,8 @@
     <link href="https://getbootstrap.com/docs/4.2/examples/dashboard/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/mycss.css' %}">
-{#    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css.css' %}">#}
-{#    <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.css.css' %}">#}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
-
-{#    <script async defer#}
-{#    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCimwlgqq2sqzXxYdlSerZj2xCbMkgDuWo&callback=initMap">#}
-{#    </script>#}
 
     </head>
     <script async defer
@@ -58,9 +52,9 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                    <a href="{% url 'rango:profile' user.username %}">Profile</a>
+                                    <a href="{% url 'rango:profile' user.username %}">Your Profile</a>
                                     <hr>
-                                    <a href="{% url 'rango:list_profiles' %}">List Profiles</a>
+                                    <a href="{% url 'rango:list_profiles' %}">Other Profiles</a>
                                 </div>
                             </li>
                         {% endif %}
@@ -106,14 +100,12 @@
                          </a>
                     {% endif %}
                     </div>
-
                 </nav>
 
                 <main role="main" class="col-md-9  ml-sm-auto col-lg-10 px-4">
                     {% block body_block %}
 
                     {% endblock %}
-
                 </main>
 
             </div>

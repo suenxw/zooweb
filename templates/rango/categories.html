@@ -1,11 +1,14 @@
  <div>
+Category:
+{#<hr>#}
     <ul>
     {% if categories %}
         {% for c in categories %}
+            <hr >
             {% if c == current_category %}
-            <li class="list"><strong><a id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></strong></li>
+                <li class="list"><strong><a id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></strong></li>
             {% else %}
-            <li><a id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></li>
+                <li><a id="list_a" href="{% url 'rango:show_category' c.slug %}">{{ c.category_name }}</a></li>
             {% endif %}
         {% endfor %}
     {% else %}
