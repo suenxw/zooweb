@@ -67,8 +67,9 @@ ul,li{
 
 #sidebarList{
     background-position: -100px -5px;
-    /*background-image: url("static/images/dog.png");*/
+    background-image: url("static/images/dog.png");
     border-radius: 15px;
+
 }
 
 #welcome_header{
