@@ -18,6 +18,8 @@
     background-color: indianred;
 }
 
+
+
 #navDec2{
     background-color: purple;
 }
@@ -433,3 +435,11 @@ ul,li{
     background-image: url(static/images/loginpic.jpg);
 }
 
+
+#backgbody{
+    background: url(static/images/bgbody_4.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;"
+}
