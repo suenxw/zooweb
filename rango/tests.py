@@ -1,6 +1,4 @@
 from django.test import TestCase
-from registration.forms import User
-
 from rango.models import AnimalCategory
 from django.urls import reverse
 
