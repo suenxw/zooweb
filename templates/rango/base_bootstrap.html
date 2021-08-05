@@ -88,7 +88,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 d-none d-md-block bg-light sidebar" id="sideBarContainer">
+                <div class="col-md-2 d-none d-md-block sidebar" id="sideBarContainer">
                     <div class="sidebar-sticky"  id="sidebarList" >
 
                     {% block sidebar_block %}
@@ -98,7 +98,7 @@
                     {% if user.is_superuser %}
                         <a href="{% url 'rango:add_category'%}">
                              <button class="btn btn-info" id="addCategorySide">Add Category</button>
-                         </a>
+                        </a>
                     {% endif %}
                     </div>
                 </div>

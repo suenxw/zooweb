@@ -8,6 +8,7 @@
     width: 42px;
     height: 42px;
     background-image: url("static/images/icon.png");
+    border: none;
 }
 
 #navDec1,#navDec2,#navDec3,#navbarDropdown1,#navbarDropdown2{
@@ -96,7 +97,6 @@ h3{
     margin-top: -5px;
     margin-left: 15px;
     border: none;
-    background-color: black;
     margin-bottom: 5px;
 }
 
@@ -106,7 +106,6 @@ h3{
     background-image: url("static/images/sidebar.jpg");
     border-radius: 15px;
     background-size:cover;
-    background-color: transparent;
 }
 
 #categoriesTitle{
