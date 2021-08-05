@@ -95,6 +95,8 @@ ul,li{
 #sidebarList{
     background-image: url("static/images/sidebar.jpg");
     border-radius: 15px;
+    background-size:cover;
+
 }
 
 #welcome_header_container{
@@ -113,6 +115,7 @@ ul,li{
     zoom: 90%;
     background-image: url("static/images/elephant.jpg");
     border-radius: 15px;
+    background-size:cover;
 }
 
 #welcome_header h1{
@@ -299,6 +302,7 @@ ul,li{
     background-position: -90px -40px;
 	background-image: url(static/images/panda.png);
 	float:right;
+
 }
 
 .changePassword{
@@ -309,10 +313,12 @@ ul,li{
 }
 
 .changePasswordDecorator{
-    height: 140%;
+    height: 120%;
     background-position: -700px -1500px;
     background-image: url(static/images/deer.png);
     border-radius: 15px;
+    background-size:cover;
+
 }
 
 #aboutBottomPic img{
