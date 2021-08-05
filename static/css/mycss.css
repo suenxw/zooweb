@@ -82,8 +82,7 @@ ul,li{
     width: auto;
     height: 550px;
     background-position: -320px -60px;
-    background-color: #FFFFFF;
-    /*background-image: url("static/images/giraffe.png");*/
+    background-image: url("static/images/giraffe.png");
     border-radius: 15px;
 }
 
@@ -189,7 +188,7 @@ ul,li{
 }
 
 #profileHeader{
-    margin: 0 0 10px;
+    margin: 0 10px 10px 0;
     padding-top:0;
     height: 220px;
     background-position: -140px -240px;
@@ -208,6 +207,7 @@ ul,li{
 }
 
 #profileBottom{
+    margin-right: 10px;
     border-radius: 15px;
     height: 220px;
     background-position: -50px -370px;
@@ -251,19 +251,33 @@ ul,li{
     background-image: url(static/images/wood-green.jpg);
 }
 
+#animalProfileContainer{
+    margin: 0;
+    border-radius: 15px;
+}
+
 #addAnimalBody{
     margin: 0;
     border-radius: 15px;
     padding: 40px;
 }
 
+#animalProfilePic{
+    border-radius: 15px;
+}
+
 #animalProfilePic img{
     color: #E9A20B;
     position: center;
     padding: 20px;
+    border-radius: 15px;
 }
 
 #comment-area #comment-area-header{
     color: #E9A20B;
+}
+
+.comment-list-panel{
+    padding: 20px;
 }
 

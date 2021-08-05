@@ -10,7 +10,7 @@
     <h1 class="jumbotron-heading">{{ selected_animal.animal_name }}'s Profile</h1>
 </div>
 
-<div class="container">
+<div class="container" id="animalProfileContainer">
     <div class="row">
         <div id="animalProfilePic">
             {% if selected_animal.picture %}
@@ -19,9 +19,8 @@
                 <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="300" height="300" alt="Default animal avatar" />
             {% endif %}
         </div>
-        <br />
 
-        <div class="comment-list-panel">
+        <div class="comment-list-panel" id="clp">
             <ul class="comment-list list-unstyled">
                 <li class="comment-item">
                     Animal Name: {{ selected_animal.animal_name }}
