@@ -70,19 +70,5 @@ class CommentForm(forms.ModelForm):
         fields = ('content',)
 
         widgets = {
-            # 为各个需要渲染的字段指定渲染成什么html组件，主要是为了添加css样式。
-            # 例如 user_name 渲染后的html组件如下：
-            # <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-
-            # 'username': forms.TextInput(attrs={
-            #     'class': 'form-control',
-            #     'placeholder': "please enter your username",
-            #     'aria-describedby': "sizing-addon1",
-            # }),
-            # 'email': forms.TextInput(attrs={
-            #     'class': 'form-control',
-            #     'placeholder': "please enter your e_mail",
-            #     'aria-describedby': "sizing-addon1",
-            # }),
             'content': forms.Textarea(attrs={'placeholder': 'please enter your comment'}),
         }
