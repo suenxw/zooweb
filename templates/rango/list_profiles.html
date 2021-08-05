@@ -6,20 +6,18 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
-    <div class="container">
-        <h1 class="jumbotron-heading">User Profiles</h1>
-    </div>
+<div class="jumbotron p-4" id="listProfilesHeader">
+    <h1 class="jumbotron-heading">User Profiles</h1>
 </div>
 
-<div class="container">
+<div class="container" >
     <div class="row">
         {% if user_profile_list %}
         <div class="panel-body">
             <div class="list-group">
             {% for list_user in user_profile_list %}
-                <div class="list-group-item">
-                    <h4 class="list-group-item-heading">
+                <div class="list-group-item" id="listProfiles">
+                    <h4 class="list-group-item-heading" >
                         <a href="{% url 'rango:profile' list_user.user.username %}">
                             {% if list_user.picture %}
                                 <img src="{{ MEDIA_URL }}{{ list_user.picture }}" width="64" height="64" alt="Profile picture for {{ list_user.username }}" />
@@ -29,7 +27,6 @@
                         </a>
                         <br/>
                         username: {{ list_user.user.username }}
-
                     </h4>
                 </div>
             {% endfor %}

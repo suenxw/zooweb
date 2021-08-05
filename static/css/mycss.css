@@ -1,10 +1,19 @@
+*{
+      margin:0;
+      padding:0;
+}
+
 .myheader {
     margin:0;padding:0;
     text-align: center;
     color: #E9A20B;
     font-family: "Heiti SC";
+    font-size: 40px;
+    font-weight: bold;
     background-image: url("static/images/wood-green.jpg");
     background-attachment: fixed;
+    border-radius: 15px;
+    height: 70px;
 }
 
 div{
@@ -28,8 +37,38 @@ h3{
     font-family: "Euphemia UCAS";
 }
 
-li{
+.content-body{
+    padding: 15px;
+}
+
+#mcb1{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+ul,li{
     list-style: none;
+}
+
+#list_a{
+    margin:0;padding:0;
+    text-indent: 90px;
+    font-family: "Academy Engraved LET";
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 50px;
+    width: 300px;
+    display:inline-block;
+}
+
+#list_a:hover{
+    color: #E9A20B;
+}
+
+#sidebarList{
+    background-position: -100px -5px;
+    background-image: url("static/images/dog.png");
+    border-radius: 15px;
 }
 
 #welcom_header{
@@ -39,7 +78,8 @@ li{
     width: auto;
     height: 550px;
     background-position: -320px -60px;
-    background-image: url("https://www.edinburghzoo.org.uk/media/8570/high-edinburgh-home-slider.jpg?crop=0,0,0.12017268077518692,0.12017268077518696&cropmode=percentage&width=1576&height=833");
+    background-image: url("static/images/giraffe.png");
+    border-radius: 15px;
 }
 
 #welcom_header h1{
@@ -57,6 +97,7 @@ li{
     display: inline;
     width: 283px;
     height: 230px;
+    border-radius: 15px;
 }
 
 #indexBottom{
@@ -76,29 +117,33 @@ li{
 }
 
 .container, #indexContainner{
-    /*margin:0;*/
     background: aquamarine;
-    background-image: url(https://data.1freewallpapers.com/detail/field-grass-lawn-green.jpg);
-    /*background: rgba(0, 0, 0, 0.1);*/
+    background-image: url(static/images/wood-sand.jpg);
+    /*caopingzaicichu!!!!!!!*/
 }
 
 .col-md-6 .card-body h5{
     color: crimson;
     text-align: center;
-    background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-sand.jpg);
+    background-image: url(static/images/wood-sand.jpg);
     font-family: 'American Typewriter';
 }
 
 #indexList{
-    background-image: url(https://www.edinburghzoo.org.uk/images/textures/wood-green.jpg);
+    background-image: url(static/images/wood-green.jpg);
     text-align: center;
     font-family: 'American Typewriter';
     font-size: 25px;
+    border-radius: 15px;
+}
+
+#indexList a:hover{
+    color: #E9A20B;
 }
 
 #addCategory{
     color: #FFFFFF;
-    background-image: url("https://s.rfi.fr/media/display/84de4e76-8ae8-11ea-8972-005056bff430/w:1280/p:16x9/Tiger%20in%20Indonesian%20zoo.webp");
+    background-image: url("static/images/tiger.png");
     height: 400px;
     background-position: -50px -70px;
 }
@@ -120,7 +165,7 @@ li{
 }
 
 .addCategoryForm{
-    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX46749229.jpg");
+    background-image: url("static/images/addcategorybackground.png");
     color: firebrick;
     font-style: italic;
     font-size: 30px;
@@ -141,10 +186,11 @@ li{
 }
 
 #profileHeader{
-    margin:0;padding:0;
-    height: 300px;
-    background-position: center;
-    background-image: url("https://imgix.bustle.com/inverse/1d/70/d1/86/5b1a/4df9/8080/951c30442dc1/bird-migration-40238421920jpg.jpeg?w=2000&h=640&fit=crop&crop=faces&auto=format%2Ccompress&blend=000000&blendAlpha=45&blendMode=normal");
+    margin:0;
+    padding-top:0;
+    height: 220px;
+    background-position: -140px -240px;
+    background-image: url("static/images/birds.png");
 }
 
 #profileBody{
@@ -152,7 +198,40 @@ li{
 }
 
 #profileBottom{
-    height: 150px;
-     background-position: -50px -370px;
-    background-image: url("https://www.sailorsforthesea.org/sites/default/files/homepage_2-adj.jpg");
+    height: 200px;
+    background-position: -50px -370px;
+    background-image: url("static/images/fish.png");
 }
+
+#listProfilesHeader{
+    margin:0;padding:0;
+    height: 320px;
+    background-position: -50px -1000px;
+    background-image: url("static/images/listProHe.png");
+}
+
+#listProfiles{
+    background-image: url(static/images/wood-sand.jpg);
+}
+
+.changePassword{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px;
+    background-color: khaki;
+}
+
+.changePasswordDecorator{
+    height: 400px;
+    background-position: -700px -1500px;
+    background-image: url(static/images/deer.png);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#aboutbottompic img{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
