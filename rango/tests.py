@@ -37,6 +37,7 @@ def test_model_admin_interface_inclusion(self):
     response = self.client.get('/admin/rango/profile/')
     self.assertEqual(response.status_code, 200, )
 
+
 def add_category(name, views=0, likes=0):
     category = AnimalCategory.objects.get_or_create(name=name)[0]
     category.views = views
