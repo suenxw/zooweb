@@ -6,13 +6,12 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
-    <div class="container">
-        <h1 class="jumbotron-heading">Add an animal to {{ category.category_name }}</h1>
-    </div>
+<div class="jumbotron p-4" id="addAnimalHeader">
+    <h1 class="jumbotron-heading">Add an animal to {{ category.category_name }}</h1>
 </div>
+
 <div class="container">
-    <div class="row"  lang="en">
+    <div class="row"  lang="en" id="addAnimalBody">
         <form role="form" id="animal_form" method="post" action="{% url 'rango:add_animal' category.slug %}"
               enctype="multipart/form-data">
             {% csrf_token %}

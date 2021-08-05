@@ -234,4 +234,13 @@ ul,li{
     border-bottom-right-radius: 25px;
 }
 
+#addAnimalHeader{
+    margin: 10px;
+    background-image: url(static/images/wood-green.jpg);
+}
+
+#addAnimalBody{
+    /*border-radius: 15px;*/
+    padding: 20px;
+}
 
