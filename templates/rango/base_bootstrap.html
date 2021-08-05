@@ -88,8 +88,8 @@
 
         <div class="container-fluid">
             <div class="row">
-                <nav class="col-md-2 d-none d-md-block bg-light sidebar"  id="sideBarContainer">
-                    <div class="sidebar-sticky"  id="sidebarList">
+                <div class="col-md-2 d-none d-md-block bg-light sidebar" id="sideBarContainer">
+                    <div class="sidebar-sticky"  id="sidebarList" >
 
                     {% block sidebar_block %}
                         {% get_category_list category %}
@@ -101,7 +101,7 @@
                          </a>
                     {% endif %}
                     </div>
-                </nav>
+                </div>
 
                 <main role="main" class="col-md-9  ml-sm-auto col-lg-10 px-4">
                     {% block body_block %}
