@@ -46,6 +46,11 @@ h3{
     border-top-right-radius: 15px;
 }
 
+#sideBarContainer{
+    margin-left: 5px;
+    background-color: #FFFFFF;
+}
+
 ul,li{
     list-style: none;
 }
@@ -72,6 +77,7 @@ ul,li{
 }
 
 #welcom_header_container{
+    margin-right: 10px;
     background-color: #FFFFFF;
 }
 
@@ -105,22 +111,33 @@ ul,li{
 }
 
 #indexBottom{
+    border-radius: 20px;
+    margin-bottom: 5px;
     background: peru;
 }
 
 #indexBottom span{
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
     color: #FFFFFF;
     text-align: center;
-    width: 190px;
+    width: 195px;
     background-color: peru;
     display: inline-block;
 }
 
+#indexBottom span:hover{
+    background-color: orange;
+}
+
 #indexBottom .s1{
-    width: 300px;
+    width: 305px;
 }
 
 .container{
+    border-radius: 20px;
+    margin: 0;
     background-image: url(static/images/wood-sand.jpg);
 }
 
