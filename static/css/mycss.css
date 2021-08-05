@@ -1,4 +1,4 @@
-.myheader {
+.myHeader {
     margin:0;padding:0;
     text-align: center;
     color: #E9A20B;
@@ -32,7 +32,7 @@ li{
     list-style: none;
 }
 
-#welcom_header{
+#welcome_header{
     padding-top: 10px;
     padding-left: 10px;
     font-size: 50px;
@@ -42,12 +42,12 @@ li{
     background-image: url("https://www.edinburghzoo.org.uk/media/8570/high-edinburgh-home-slider.jpg?crop=0,0,0.12017268077518692,0.12017268077518696&cropmode=percentage&width=1576&height=833");
 }
 
-#welcom_header h1{
+#welcome_header h1{
     color: #E9A20B;
     font-family: "Microsoft YaHei";
 }
 
-#welcom_header span{
+#welcome_header span{
     color: #E9A20B;
     font-size: 40px;
     font-family: "Microsoft YaHei";
