@@ -4,7 +4,8 @@
 }
 
 .myHeader {
-    margin:0;padding:0;
+    margin-bottom:10px;
+    padding:0;
     text-align: center;
     color: #E9A20B;
     font-family: "Heiti SC";
@@ -22,7 +23,8 @@ div{
 }
 
 .myAbout{
-    margin:0;padding:0;
+    margin:0;
+    padding:0;
     background-image: url("static/images/wood-sand.jpg");
 }
 
@@ -250,18 +252,17 @@ ul,li{
 }
 
 .changePassword{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 20px;
     background-color: khaki;
+    margin-bottom:10px;
 }
 
 .changePasswordDecorator{
-    height: 400px;
+    height: 380px;
     background-position: -700px -1500px;
     background-image: url(static/images/deer.png);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
 }
 
 #aboutBottomPic img{
