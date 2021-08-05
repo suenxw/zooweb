@@ -1,54 +1,23 @@
 from django.test import TestCase
-from registration.forms import User
-
 from rango.models import AnimalCategory
 from django.urls import reverse
 
-"""
-Ensures the number of views received for a Category are positive or zero.
-"""
 
-
-def create_user_object():
-    """
-    Helper function to create a User object.
-    """
-    user = User.objects.get_or_create(username='testuser',
-                                      email='test@test.com')[0]
-    user.set_password('testabc123')
-    user.save()
-
-    return user
-
-
-def create_super_user_object():
-    return User.objects.create_superuser('admin', 'admin@test.com', 'testpassword')
-
-
-def test_model_admin_interface_inclusion(self):
-    """
-        Attempts to access the UserProfile admin interface instance.
-        If we don't get a HTTP 200, then we assume that the model has not been registered. Fair assumption!
-        """
-    super_user = create_super_user_object()
-    self.client.login(username='admin', password='testpassword')
-
-    # The following URL should be available if the UserProfile model has been registered to the admin interface.
-    response = self.client.get('/admin/rango/profile/')
-    self.assertEqual(response.status_code, 200, )
-
-
-def add_category(name, views=0, likes=0):
-    category = AnimalCategory.objects.get_or_create(name=name)[0]
+def add_category(name, views):
+    category = AnimalCategory.objects.get_or_create(category_name=name)[0]
     category.views = views
-    category.likes = likes
-
     category.save()
     return category
 
 
-class AnimalCategoryMethodTests(TestCase):
+class SlugTest(TestCase):
+    def test_artist_slugify_works(self):
+        category = AnimalCategory(category_name='This is a test')
+        category.save()
+        self.assertEqual(category.slug, 'this-is-a-test')
 
+
+class AnimalCategoryMethodTests(TestCase):
     def test_ensure_views_are_positive(self):
         category = AnimalCategory(category_name='test', views=-1)
         category.save()
@@ -56,11 +25,27 @@ class AnimalCategoryMethodTests(TestCase):
 
 
 class HomePageTests(TestCase):
-
     def test_index_view_with_no_categories(self):
         response = self.client.get(reverse('rango:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'There are no categories present.')
         self.assertQuerysetEqual(response.context['categories'], [])
 
+
+class AddCategoryTest(TestCase):
+    def test_index_view_with_categories(self):
+        add_category('Tiger', 1)
+        add_category('Bird', 5)
+        add_category('Elephant', 10)
+        add_category('Lion', 10)
+        add_category('Whale', 100)
+        response = self.client.get(reverse('rango:index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'Tiger')
+        self.assertContains(response, 'Bird')
+        self.assertContains(response, 'Elephant')
+        self.assertContains(response, 'Lion')
+        self.assertContains(response, 'Whale')
+        numberofcategories = len(response.context['categories'])
+        self.assertEquals(numberofcategories, 5)
 # Create your tests here.
