@@ -219,6 +219,7 @@ ul,li{
 
 #indexBottom .s1{
     width: 25%;
+    margin-left: 10px;
 }
 
 .container{
@@ -300,7 +301,8 @@ ul,li{
 
 #profileHeader{
     margin: 0 10px 10px 0;
-    height: 220px;
+    height: 150px;
+    width: 100%;
     background-position: -140px -240px;
     border-radius: 15px;
     background-image: url("static/images/birds.png");
@@ -320,6 +322,7 @@ ul,li{
     margin-right: 10px;
     border-radius: 15px;
     height: 220px;
+    width: 100%;
     background-position: -50px -370px;
     background-image: url("static/images/fish.png");
 }
@@ -351,7 +354,7 @@ ul,li{
 #listProfilesDecorator{
     border-radius: 15px;
     width: 50%;
-    height: 60%;
+    height: 45%;
     background-position: -90px -40px;
 	background-image: url(static/images/panda.png);
 	float:right;
