@@ -51,6 +51,8 @@ h3{
 #sideBarContainer{
     margin-left: 5px;
     background-color: #FFFFFF;
+    border: none;
+    margin-bottom: 5px;
 }
 
 ul,li{
@@ -58,28 +60,41 @@ ul,li{
     text-align: center;
 }
 
-#list_a{
-    /*margin:0;padding:0;*/
-    /*text-indent: 90px;*/
-    /*font-family: "Academy Engraved LET";*/
-    /*color: rgba(2, 2, 2, 0);*/
-    font-size: 30px;
-    /*line-height: 50px;*/
-    /*width: 300px;*/
-    /*display:inline-block;*/
+#addCategorySide{
+    width: 100%;
+    position: center;
+    border: none;
+    background-color: transparent;
+    font-family: Courier;
+    color: black;
+}
 
+#addCategorySide:hover{
+   font-size: 20px;
+    color: red;
+}
+
+#list_a{
+    margin:0;padding:0;
+    text-indent: -20%;
+    font-family: "Academy Engraved LET";
+    /*color: rgba(2, 2, 2, 0);*/
+    color: black;
+    font-size: 30px;
+    line-height: 50px;
+    width: 300px;
+    display:inline-block;
+    border: none;
 }
 
 #list_a:hover{
-    /*color: #E9A20B;*/
-    /*text-align: center;*/
+    color: #FFFFFF;
+    text-align: center;
 }
 
 #sidebarList{
-    background-position: -100px -5px;
-    background-image: url("static/images/dog.png");
+    background-image: url("static/images/sidebar.jpg");
     border-radius: 15px;
-
 }
 
 #welcome_header_container{
@@ -93,8 +108,10 @@ ul,li{
     font-size: 50px;
     width: auto;
     height: 550px;
-    background-position: -320px -60px;
-    background-image: url("static/images/giraffe.png");
+    position: relative;
+    background-position: 0 80%;
+    zoom: 90%;
+    background-image: url("static/images/elephant.jpg");
     border-radius: 15px;
 }
 
@@ -106,12 +123,18 @@ ul,li{
 #welcome_header span{
     color: #E9A20B;
     font-size: 40px;
-    font-family: "Microsoft YaHei";
+    font-family: Courier;
+}
+
+.map-guide{
+    color: black;
+    position: center;
+    font-family: Courier;
 }
 
 .pic_display img{
     display: inline;
-    width: 283px;
+    width: 24%;
     height: 230px;
     border-radius: 15px;
 }
@@ -128,7 +151,7 @@ ul,li{
     padding: 0;
     color: #FFFFFF;
     text-align: center;
-    width: 195px;
+    width: 18%;
     background-color: peru;
     display: inline-block;
 }
@@ -138,7 +161,7 @@ ul,li{
 }
 
 #indexBottom .s1{
-    width: 300px;
+    width: 25%;
 }
 
 .container{
@@ -152,8 +175,9 @@ ul,li{
     margin-left: 0px;
 }
 .col-md-6 .card-body h5{
-    color: crimson;
+    color: black;
     text-align: center;
+    margin-bottom: 5px;
     background-image: url(static/images/wood-sand.jpg);
     font-family: 'American Typewriter';
 }
@@ -172,9 +196,8 @@ ul,li{
 
 #addCategory{
     color: #FFFFFF;
-    background-image: url("static/images/tiger.png");
-    height: 400px;
-    background-position: -50px -70px;
+    background-image: url(static/images/wood-green.jpg);
+    height: 25%;
 }
 
 .jumbotron-heading{
@@ -197,15 +220,16 @@ ul,li{
 }
 
 .addCategoryForm{
-    background-image: url("static/images/addcategorybackground.png");
-    color: firebrick;
+    background-image: url("static/images/wood-sand.jpg");
+    color: black;
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
-    background-repeat: round;
-    font-family: "Hiragino Sans";
+    font-family: "Heiti SC";
+    padding-top: 3%;
     padding-left: 30%;
     height: 300px;
+    border-radius: 15px;
 }
 
 .updateProfile{
@@ -270,8 +294,8 @@ ul,li{
 
 #listProfilesDecorator{
     border-radius: 15px;
-    width:50%;
-    height: 400px;
+    width: 50%;
+    height: 60%;
     background-position: -90px -40px;
 	background-image: url(static/images/panda.png);
 	float:right;
@@ -285,7 +309,7 @@ ul,li{
 }
 
 .changePasswordDecorator{
-    height: 380px;
+    height: 140%;
     background-position: -700px -1500px;
     background-image: url(static/images/deer.png);
     border-radius: 15px;
@@ -332,3 +356,14 @@ ul,li{
     padding: 20px;
 }
 
+#registrationHeading{
+    border-radius: 15px;
+    color: #E9A20B;
+    font-family: "Heiti SC";
+    background-image: url(static/images/wood-green.jpg);
+    margin-bottom: 10px;
+}
+
+#registrationForm{
+    padding: 10px 10px 10px 20px;
+}
