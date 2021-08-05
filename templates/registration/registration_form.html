@@ -10,11 +10,13 @@
         <h1 class="registrationHeading">Register Here</h1>
 
 </div>
-
+<div><img style="float:right" src="../../static/css/static/images/welcome.jpg" alt="" /><div>
 <div class="container">
+
     <div class="row">
         <div class="form-group" >
             <form role="form"  method="post" action=".">
+
                 {% csrf_token %}
                 <div class="form-group">
                     <p class="required">
@@ -39,7 +41,6 @@
                             Your password can't be entirely numeric.<br/>
                         </span>
                     </p>
-                    <div><img style="float:right" src="XXX.jpg" alt="" />1.将你的标志logo·······</div>
                     <p class="required" >
                         <label class="required" for="id_password2">Password confirmation:</label>
                         <input class="form-control" id="id_password2" name="password2" type="password" />
