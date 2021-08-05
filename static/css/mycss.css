@@ -367,3 +367,21 @@ ul,li{
 #registrationForm{
     padding: 10px 10px 10px 20px;
 }
+
+#loginHeader{
+    text-indent: 8px;
+    border-radius: 15px;
+    color: #E9A20B;
+    font-family: "Heiti SC";
+    background-image: url(static/images/wood-green.jpg);
+    margin: 0 0 10px;
+    padding: 0;
+    height: 50px;
+}
+
+#loginBody{
+    margin: 0;
+    border-radius: 15px;
+    height: 590px;
+    background-image: url(static/images/loginpic.jpg);
+}
