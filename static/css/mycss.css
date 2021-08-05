@@ -137,15 +137,14 @@ ul,li{
 }
 
 #list_a{
-    margin:0;padding:0;
+    padding:0;
     text-indent: -20%;
     font-family: "Academy Engraved LET";
     color: black;
     font-size: 30px;
-    line-height: 50px;
-    width: 300px;
     display:inline-block;
     border: none;
+    text-align: center;
 }
 
 #list_a:hover{
