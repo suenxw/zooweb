@@ -4,24 +4,27 @@
 }
 
 #icon{
+    margin-left: 15px;
     width: 42px;
     height: 42px;
     background-image: url("static/images/icon.png");
 }
 
-#navDec1,#navDec2,#navbarDropdown1,#navbarDropdown2{
+#navDec1,#navDec2,#navDec3,#navbarDropdown1,#navbarDropdown2{
+    width: 165px;
     color: black;
 }
 
 #navDec1{
-    margin-left: 260px;
     background-color: indianred;
 }
 
-
-
 #navDec2{
     background-color: purple;
+}
+
+#navDec3{
+    background-color: darkkhaki;
 }
 
 #navbarDropdown1{
@@ -29,11 +32,10 @@
 }
 
 #navbarDropdown2{
-    margin-right: 80px;
     background-color: darkgreen;
 }
 
-#navDec1:hover,#navDec2:hover,#navbarDropdown1:hover,#navbarDropdown2:hover{
+#navDec1:hover,#navDec2:hover,#navDec3:hover,#navbarDropdown1:hover,#navbarDropdown2:hover{
     color: #E9A20B;
 }
 
@@ -87,8 +89,8 @@ h3{
 }
 
 #sideBarContainer{
-    /*margin-left: 5px;*/
-    background-color: #FFFFFF;
+    margin-left: 15px;
+    background-color: transparent;
     border: none;
     margin-bottom: 5px;
 }
@@ -435,11 +437,35 @@ ul,li{
     background-image: url(static/images/loginpic.jpg);
 }
 
+#searchContainer{
+    background-image: url("static/images/wood-sand.jpg");
+    border-radius: 15px;
+}
+
+#categoryTitle{
+    margin: 0px 0 10px 0;
+    font-size: 30px;
+    font-family: "Heiti SC";
+    background-image: url("static/images/wood-green.jpg");
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+}
+
+#addAnimalButton{
+    padding: 20px;
+}
+
+#numOfVisit{
+    font-family: "Heiti SC";
+    float: right;
+    padding: 20px;
+}
 
 #backgbody{
-    background: url(static/images/bgbody_4.jpeg) no-repeat center center fixed;
+    background: url(static/images/bgbody_4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;"
+    background-size: cover;
 }
