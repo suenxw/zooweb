@@ -4,7 +4,8 @@
 }
 
 .myHeader {
-    margin:0;padding:0;
+    margin-bottom:10px;
+    padding:0;
     text-align: center;
     color: #E9A20B;
     font-family: "Heiti SC";
@@ -22,7 +23,8 @@ div{
 }
 
 .myAbout{
-    margin:0;padding:0;
+    margin:0;
+    padding:0;
     background-image: url("static/images/wood-sand.jpg");
 }
 
@@ -44,6 +46,11 @@ h3{
 #mcb1{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+#sideBarContainer{
+    margin-left: 5px;
+    background-color: #FFFFFF;
 }
 
 ul,li{
@@ -70,6 +77,11 @@ ul,li{
     background-image: url("static/images/dog.png");
     border-radius: 15px;
 
+}
+
+#welcome_header_container{
+    margin-right: 10px;
+    background-color: #FFFFFF;
 }
 
 #welcome_header{
@@ -102,27 +114,40 @@ ul,li{
 }
 
 #indexBottom{
+    border-radius: 20px;
+    margin-bottom: 5px;
     background: peru;
 }
 
 #indexBottom span{
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
     color: #FFFFFF;
     text-align: center;
-    width: 190px;
+    width: 195px;
     background-color: peru;
     display: inline-block;
 }
 
+#indexBottom span:hover{
+    background-color: orange;
+}
+
 #indexBottom .s1{
-    width: 300px;
+    width: 305px;
 }
 
-.container, #indexContainer{
-    background: aquamarine;
+.container{
+    border-radius: 20px;
+    margin: 0;
     background-image: url(static/images/wood-sand.jpg);
-
 }
-
+.registrationBody{
+    background-image: url(static/images/wood-sand.jpg);
+    border-radius: 0px;
+    margin-left: 0px;
+}
 .col-md-6 .card-body h5{
     color: crimson;
     text-align: center;
@@ -154,7 +179,10 @@ ul,li{
     font-size: 60px;
     font-family: "Hiragino Sans";
 }
-
+.registrationHeading{
+    background: #E9A20B;
+    color: #FFFFFF;
+}
 #btnSubmit{
     background: #E9A20B;
     color: #FFFFFF;
@@ -187,19 +215,28 @@ ul,li{
 }
 
 #profileHeader{
-    margin:0;
+    margin: 0 10px 10px 0;
     padding-top:0;
     height: 220px;
     background-position: -140px -240px;
+    border-radius: 15px;
     background-image: url("static/images/birds.png");
 }
 
 #profileBody{
+    border-radius: 15px;
     border: 10px #333333;
+    margin: 0 0 10px;
+}
+
+#profileBodyPic{
+    margin: 15px 15px 15px 60px;
 }
 
 #profileBottom{
-    height: 200px;
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 220px;
     background-position: -50px -370px;
     background-image: url("static/images/fish.png");
 }
@@ -216,18 +253,17 @@ ul,li{
 }
 
 .changePassword{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 20px;
     background-color: khaki;
+    margin-bottom:10px;
 }
 
 .changePasswordDecorator{
-    height: 400px;
+    height: 380px;
     background-position: -700px -1500px;
     background-image: url(static/images/deer.png);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
 }
 
 #aboutBottomPic img{
@@ -235,13 +271,39 @@ ul,li{
     border-bottom-right-radius: 25px;
 }
 
-#addAnimalHeader{
-    margin: 10px;
+#addAnimalHeader, #animalProfileHeader{
+    margin-bottom: 10px;
+    margin-right: 10px;
     background-image: url(static/images/wood-green.jpg);
 }
 
+#animalProfileContainer{
+    margin: 0;
+    border-radius: 15px;
+}
+
 #addAnimalBody{
-    /*border-radius: 15px;*/
+    margin: 0;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#animalProfilePic{
+    border-radius: 15px;
+}
+
+#animalProfilePic img{
+    color: #E9A20B;
+    position: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#comment-area #comment-area-header{
+    color: #E9A20B;
+}
+
+.comment-list-panel{
     padding: 20px;
 }
 

@@ -6,19 +6,21 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
+<div class="jumbotron p-4" id="animalProfileHeader">
     <h1 class="jumbotron-heading">{{ selected_animal.animal_name }}'s Profile</h1>
 </div>
 
-<div class="container">
+<div class="container" id="animalProfileContainer">
     <div class="row">
-        {% if selected_animal.picture %}
-            <img src="{{ MEDIA_URL }}{{ selected_animal.picture }}" width="300" height="300" alt="{{ selected_animal.animal_name }}'s profile image" />
-        {% else %}
-            <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="300" height="300" alt="Default animal avatar" />
-        {% endif %}
-        <br />
-        <div class="comment-list-panel">
+        <div id="animalProfilePic">
+            {% if selected_animal.picture %}
+                <img src="{{ MEDIA_URL }}{{ selected_animal.picture }}" width="300" height="300" alt="{{ selected_animal.animal_name }}'s profile image" />
+            {% else %}
+                <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="300" height="300" alt="Default animal avatar" />
+            {% endif %}
+        </div>
+
+        <div class="comment-list-panel" id="clp">
             <ul class="comment-list list-unstyled">
                 <li class="comment-item">
                     Animal Name: {{ selected_animal.animal_name }}
@@ -51,7 +53,7 @@
         <br>
         <hr>
         <hr>
-        <h5>You can post your comments here...</h5>
+        <h5 id="comment-area-header">You can post your comments here...</h5>
         <form role="form" id="comment_form" method="post" action="{% url 'rango:post_comment' selected_animal.animal_name user.username %}">
             {% csrf_token %}
             {% for hidden in form.hidden_fields %}
