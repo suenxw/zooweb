@@ -3,17 +3,17 @@ h1, h2, h3 {margin: 0;}
 ul, ol {margin: 0; padding:0;}
 p {margin: 0;}
 html, body{
-	font-family: 'OpenSans-Regular';
-	font-size: 100%;
-	background: #ffffff;
+	/*font-family: 'OpenSans-Regular';*/
+	/*font-size: 100%;*/
+	/*background: #ffffff;*/
 }
 @font-face {
-   font-family: 'OpenSans-Regular';
-   src: url(../fonts2/OpenSans-Regular.ttf)format('truetype');
+   /*font-family: 'OpenSans-Regular';*/
+   /*src: url(../fonts2/OpenSans-Regular.ttf)format('truetype');*/
 }
 @font-face {
-   font-family: 'Marvel-Regular';
-   src: url(../fonts2/Marvel-Regular.ttf) format('truetype');
+   /*font-family: 'Marvel-Regular';*/
+   /*src: url(../fonts2/Marvel-Regular.ttf) format('truetype');*/
 }
 body a{
 	transition:0.5s all;
@@ -86,7 +86,7 @@ h1.b1, h2.b2, h3.b3 {
 	color:#fff;
 	padding:0.8em 2em;
 	display:block;
-		font-family: 'Marvel-Regular';
+		/*font-family: 'Marvel-Regular';*/
 	font-weight:700;
 	font-size:1.1em;
 }
@@ -117,7 +117,7 @@ span.menu {
   width:86%
 }
 .search input[type="submit"] {
-  background: url('../images/search1.png') no-repeat 13px 3px;
+  /*background: url('../images/search1.png') no-repeat 13px 3px;*/
   border: none;
   cursor: pointer;
   width: 46px;
@@ -128,7 +128,7 @@ span.menu {
   right: 2px;
 }
 .banner-left{
-	background:url(../images/bnr2.jpg) no-repeat 0px 0px;
+	/*background:url(../images/bnr2.jpg) no-repeat 0px 0px;*/
 	background-size:cover;
 	min-height:500px;
 	padding:0;
@@ -154,7 +154,7 @@ span.menu {
 	font-size:2.5em;
   padding:1em 5em 1em 1em;
   background:rgba(0, 0, 0, 0.19);
-  font-family: 'Marvel-Regular';
+  /*font-family: 'Marvel-Regular';*/
   font-weight: 700;
   line-height:1.2em;
 }
@@ -166,22 +166,22 @@ span.menu {
 	width:50%;
 }
 .grid1{
-	background:url(../images/g2.jpg) no-repeat 0px 0px;
+	/*background:url(../images/g2.jpg) no-repeat 0px 0px;*/
 	background-size:cover;
 	min-height:250px;
 }
 .grid2{
-	background:url(../images/g1.jpg) no-repeat 0px 0px;
+	/*background:url(../images/g1.jpg) no-repeat 0px 0px;*/
 	background-size:cover;
 	min-height:250px;
 }
 .grid3{
-	background:url(../images/g4.jpg) no-repeat 0px 0px;
+	/*background:url(../images/g4.jpg) no-repeat 0px 0px;*/
 	background-size:cover;
 	min-height:250px;
 }
 .grid4{
-	background:url(../images/g3.jpg) no-repeat 0px 0px;
+	/*background:url(../images/g3.jpg) no-repeat 0px 0px;*/
 	background-size:cover;
 	min-height:250px;
 }
@@ -199,7 +199,7 @@ span.menu {
 	text-transform:uppercase;
 	font-weight:600;
 	display:inline-block;
-	font-family: 'Marvel-Regular';
+	/*font-family: 'Marvel-Regular';*/
 }
 .banner_rght_info p a:hover{
 	background:#b28b51;
@@ -232,7 +232,7 @@ span.menu {
 }
 .panel-default > .panel-heading {
   color: #999;
-    background:url(../images/pls.png) no-repeat 7px 11px #fff;
+    /*background:url(../images/pls.png) no-repeat 7px 11px #fff;*/
 	padding: 10px 30px;
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
@@ -562,7 +562,7 @@ color: #fff;
 .social i {
 width: 27px;
 height: 27px;
-background: url('../images/social.png') no-repeat 0px 0px;
+/*background: url('../images/social.png') no-repeat 0px 0px;*/
 display: inline-block;
 margin:0 5px;
 }
@@ -643,7 +643,7 @@ color: #6F5C1D;
   margin-bottom: 0.7em;
 }
 .what-do li ,.activites li {
-list-style-image: url(../images/icon3.png);
+/*list-style-image: url(../images/icon3.png);*/
 margin:0 0 10px 20px;
 }
 .what-do li a,.activites li a {
@@ -839,7 +839,7 @@ text-align:center;
   margin-top: 20.3em;
 }
 .banner-left {
-  background: url(../images/bnr2.jpg) no-repeat -72px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat -72px 0px;*/
   min-height: 501px;
   background-size:cover;
 }
@@ -856,12 +856,12 @@ text-align:center;
   margin-top: 8em;
 }
 .grid3 {
-  background: url(../images/g4.jpg) no-repeat 0px 0px;
+  /*background: url(../images/g4.jpg) no-repeat 0px 0px;*/
   background-size: cover;
   min-height: 230px;
 }
 .grid4 {
-  background: url(../images/g3.jpg) no-repeat 0px 0px;
+  /*background: url(../images/g3.jpg) no-repeat 0px 0px;*/
   background-size: cover;
   min-height: 230px;
 }
@@ -881,7 +881,7 @@ text-align:center;
   padding:1em 5em 1em 1em;
 }
 .banner-left {
-  background: url(../images/bnr2.jpg) no-repeat -72px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat -72px 0px;*/
   min-height: 379px;
   background-size: cover;
 }
@@ -998,7 +998,7 @@ text-align:center;
   font-size: 1.2em;
 }
 .banner-left {
-  background: url(../images/bnr2.jpg) no-repeat 0px -38px;
+  /*background: url(../images/bnr2.jpg) no-repeat 0px -38px;*/
   min-height: 379px;
   background-size: cover;
   padding-top: 14em;
@@ -1131,7 +1131,7 @@ a.read {
   padding: 0.7em 1.1em;
 }
 .banner-left {
-  background: url(../images/bnr2.jpg) no-repeat 0px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat 0px 0px;*/
   min-height: 379px;
   background-size: cover;
   padding-top: 14em;
@@ -1196,7 +1196,7 @@ ul.nav1 {
 }
 .banner-left {
   padding-top: 15em;
-  background: url(../images/bnr2.jpg) no-repeat 0px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat 0px 0px;*/
   min-height: 379px;
   background-size:cover;
 }
@@ -1208,7 +1208,7 @@ ul.nav1 {
  padding: 7px 0px 7px 15px;
 }
 .search input[type="submit"] {
-  background: url('../images/search1.png') no-repeat 4px 3px;
+  /*background: url('../images/search1.png') no-repeat 4px 3px;*/
   width: 33px;
   height: 31px;
   top: 3px;
@@ -1308,7 +1308,7 @@ ul.nav1 {
 }
 .banner-left {
   padding-top: 9em;
-  background: url(../images/bnr2.jpg) no-repeat 0px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat 0px 0px;*/
   min-height: 256px;
   background-size: cover;
 }
@@ -1420,7 +1420,7 @@ ul.nav1 {
 }
 .banner-left {
   padding-top: 6em;
-  background: url(../images/bnr2.jpg) no-repeat 0px 0px;
+  /*background: url(../images/bnr2.jpg) no-repeat 0px 0px;*/
   min-height: 178px;
   background-size: cover;
 }
@@ -1449,7 +1449,7 @@ ul.nav1 {
   margin-top: 5.1em;
 }
 .grid3 {
-  background: url(../images/g4.jpg) no-repeat -80px 0px;
+  /*background: url(../images/g4.jpg) no-repeat -80px 0px;*/
 }
 .banner_rght_info h4 {
   padding: 1em 0.5em;
