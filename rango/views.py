@@ -157,7 +157,7 @@ class ProfileView(View):
         except User.DoesNotExist:
             return None
 
-        user_profile = UserProfile.objects.get_or_create(user=user)[0]
+        user_profile = UserProfile.objects.get_or_create(user_id=user.id)[0]
         form = UserProfileForm({'phone': user_profile.phone,
                                 'picture': user_profile.picture})
 
