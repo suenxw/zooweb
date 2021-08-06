@@ -3,7 +3,7 @@
 
 {% block title_block %}
     {% if category %}
-        {{ category.name }}
+        {{ category.category_name }}
     {% else %}
         Unknown Category
     {% endif %}
@@ -33,7 +33,7 @@
          </a>
     {% endif %}
 
-    <p id="numOfVisit">Visits: {{ category.views }}</p>
+    <p id="numOfVisit">Vist View: {{ category.views }}</p>
 
     <hr>
 
