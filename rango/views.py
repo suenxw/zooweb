@@ -283,10 +283,10 @@ class SearchAnimalView(View):
         context_dict = {}
         try:
             category = AnimalCategory.objects.get(slug=category_name_slug)
-            animal_list = get_animal_list(max_results=8, starts_with=suggestion)
+            animal_list = get_animal_list( cat=category,max_results=8,target=suggestion)
 
             if len(animal_list) == 0:
-                animal_list = Animal.objects.order_by('-likes')
+                animal_list = None
 
             context_dict['animals'] = animal_list
             context_dict['category'] = category
@@ -297,11 +297,16 @@ class SearchAnimalView(View):
         return render(request, 'rango/category.html', context=context_dict)
 
 
-def get_animal_list(max_results=0, starts_with=''):
+def get_animal_list(cat,max_results=0, target=''):
     animal_list = []
 
-    if starts_with:
-        animal_list = Animal.objects.filter(animal_name__istartswith=starts_with)
+    if len(target.strip()) == 0:
+        print(len(target.strip()))
+        animal_list = Animal.objects.filter(category = cat)
+        return animal_list
+
+    if target:
+        animal_list = Animal.objects.filter(category = cat, animal_name__contains=target)
 
     if max_results > 0:
         if len(animal_list) > max_results:

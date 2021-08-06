@@ -70,5 +70,8 @@ class CommentForm(forms.ModelForm):
         fields = ('content',)
 
         widgets = {
-            'content': forms.Textarea(attrs={'placeholder': 'please enter your comment'}),
+            'content': forms.Textarea(attrs={
+                'class': 'form-control',
+                'aria-describedby': "sizing-addon1",
+                'placeholder': 'please enter your comment'})
         }
