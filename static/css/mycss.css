@@ -527,6 +527,7 @@ ul, li{
     border-radius: 15px;
     height: 610px;
     background-image: url(static/images/loginpic.jpg);
+    background-size: cover;
 }
 
 #searchContainer{
