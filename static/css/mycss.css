@@ -12,7 +12,7 @@
 }
 
 #navDec1,#navDec2,#navDec3,#navbarDropdown1,#navbarDropdown2{
-    width: 165px;
+    width: 170px;
     color: black;
 }
 
@@ -41,7 +41,7 @@
 }
 
 #navDec5{
-    padding-left: 5%;
+    text-align: center;
 }
 
 #navDec5:hover{
@@ -111,16 +111,21 @@ h3{
 #categoriesTitle{
     margin: 0;
     padding-top: 10px;
-    padding-left: 20%;
+    text-align: center;
     position: center;
     font-family: Courier;
     color: black;
 }
 
-ul,li{
+ul, li{
     list-style: none;
     text-align: center;
 }
+
+.changePassword ul li{
+    text-align: left;
+}
+
 
 #addCategorySide{
     width: 100%;
@@ -196,7 +201,7 @@ ul,li{
 }
 
 #indexBottom{
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 5px;
     background: peru;
 }
@@ -207,7 +212,7 @@ ul,li{
     padding: 0;
     color: #FFFFFF;
     text-align: center;
-    width: 18%;
+    width: 17%;
     background-color: peru;
     display: inline-block;
 }
@@ -219,6 +224,10 @@ ul,li{
 #indexBottom .s1{
     width: 25%;
     margin-left: 10px;
+}
+
+#indexBottom .s3{
+    width: 20%;
 }
 
 .container{
@@ -289,6 +298,10 @@ ul,li{
     border-radius: 15px;
 }
 
+#test1 body{
+    overflow: hidden;
+}
+
 .updateProfile{
     color: #E9A20B;
     font-weight: bolder;
@@ -300,9 +313,9 @@ ul,li{
 
 #profileHeader{
     margin: 0 10px 10px 0;
-    height: 150px;
+    min-height: 100px;
     width: 100%;
-    background-position: -140px -240px;
+    /*background-position: -140px -240px;*/
     border-radius: 15px;
     background-image: url("static/images/birds.png");
 }
@@ -320,18 +333,25 @@ ul,li{
 #profileBottom{
     margin-right: 10px;
     border-radius: 15px;
-    height: 220px;
+    min-height:290px ;
     width: 100%;
     background-position: -50px -370px;
     background-image: url("static/images/fish.png");
+}
+
+#profileBottomDec{
+    overflow: hidden;
+    visibility: hidden;
+    min-height: 100px;
 }
 
 #listProfilesHeader{
     margin-bottom: 10px;
     padding:0;
     border-radius: 15px;
-    height: 320px;
-    background-position: -50px -1000px;
+    min-height: 350px;
+    height: 80%;
+    background-position-y: 52%;
     background-image: url("static/images/listProHe.png");
 }
 
@@ -346,21 +366,25 @@ ul,li{
     background-image: url(static/images/wood-sand.jpg);
 }
 
-#listProfiles:hover{
-    color: #E9A20B;
+#listProfiles img:hover{
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
 }
 
 #listProfilesDecorator{
     border-radius: 15px;
     width: 50%;
-    height: 45%;
-    background-position: -90px -40px;
+    min-height: 355px;
+    height: 60%;
+    background-position-x: 90%;
+    background-position-y: 50%;
 	background-image: url(static/images/panda.png);
 	float:right;
-
 }
 
 .changePassword{
+    text-align: left;
     border-radius: 15px;
     padding: 20px;
     background-color: khaki;
@@ -368,11 +392,12 @@ ul,li{
 }
 
 .changePasswordDecorator{
-    height: 120%;
-    background-position: -700px -1500px;
+    min-height: 420px;
+    background-position-y: 70%;
     background-image: url(static/images/deer.png);
     border-radius: 15px;
     background-size:cover;
+    margin-bottom: 5px;
 }
 
 #aboutBottomPic img{
@@ -426,6 +451,7 @@ ul,li{
 
 #registrationForm{
     padding: 10px 10px 10px 20px;
+    margin-bottom: 15px;
 }
 
 #loginHeader{
@@ -442,23 +468,44 @@ ul,li{
 #loginBody{
     margin: 0;
     border-radius: 15px;
-    height: 590px;
+    height: 610px;
     background-image: url(static/images/loginpic.jpg);
 }
 
 #searchContainer{
     background-image: url("static/images/wood-sand.jpg");
     border-radius: 15px;
+    min-height: 625px;
+    margin-bottom: 10px;
 }
 
 #categoryTitle{
-    margin: 0px 0 10px 0;
+    padding-left: 10px;
+    color: #E9A20B;
     font-size: 30px;
     font-family: "Heiti SC";
     background-image: url("static/images/wood-green.jpg");
-    height: 40px;
+    text-align: center;
     border-radius: 15px;
-    line-height: 40px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+#suggestion{
+    width: 500px;
+    margin-left: 28%;
+    margin-top: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #E9A20B;
+}
+
+#searchBody{
+    margin-top: 10px;
+}
+
+#noAnimalInCategory{
+    padding-left: 20px;
 }
 
 #addAnimalButton{
@@ -477,4 +524,32 @@ ul,li{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#galleryTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("static/images/wood-green.jpg");
+    font-family: "Heiti SC";
+    font-size: 30px;
+    color: #E9A20B;
+    line-height: 60px;
+    border-radius: 15px;
+}
+
+#bottomDec{
+    min-height: 125px;
+}
+
+#Password_changed{
+    visibility: hidden;
+}
+
+#Password_changed_notification{
+    font-family: "Heiti SC";
+    font-size: 30px;
+    color: #E9A20B;
+    padding-top: 50px;
+    padding-bottom: 605px;
+    text-align: center;
 }

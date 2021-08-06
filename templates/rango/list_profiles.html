@@ -6,6 +6,8 @@
 {% endblock %}
 
 {% block body_block %}
+<div>
+
 <div class="jumbotron p-4" id="listProfilesHeader">
     <h1 class="jumbotron-heading">User Profiles</h1>
 </div>
@@ -25,7 +27,7 @@
                                 <img src="{{ MEDIA_URL }}profile_images/default_avatar.jpg" width="80" height="80" alt="Default avatar" />
                             {% endif %}
                         </a>
-                        <br/>
+
                         username: {{ list_user.user.username }}
                     </h4>
                 </div>
@@ -36,10 +38,13 @@
         <p>There are no users present on System.</p>
         {% endif %}
     </div>
+
+
 </div>
 
-    <div id="listProfilesDecorator" >
+<div id="listProfilesDecorator" >
+</div>
 
-    </div>
+</div>
 
 {% endblock %}

@@ -11,10 +11,11 @@
 
 {% block body_block %}
 
-<div id="searchContainer">
-    <ul class="nav nav-list flex-column">
-        <li class="nav-item" id="categoryTitle">Type to find a Animal</li>
+<h1 class="nav-item" id="categoryTitle">Type to find a Animal</h1>
 
+<div id="searchContainer">
+
+    <ul class="nav nav-list flex-column" id="searchBody">
         <form role="form" id="search_form" method="POST" action="{% url 'rango:search_animal' category.slug %}">
             {% csrf_token %}
             <li class="nav-item">
@@ -24,7 +25,6 @@
             <button class="btn btn-primary" type="submit" name="search">search</button><br />
             <br/>
         </form>
-
     </ul>
 
     {% if user.is_superuser %}
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             {% else %}
-                <strong>No animals currently in category.</strong>
+                <strong id="noAnimalInCategory">No animals currently in category.</strong>
             {% endif %}
 
         {% else %}

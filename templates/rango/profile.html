@@ -6,19 +6,20 @@
 {% endblock %}
 
 {% block body_block %}
+    <div>
+<body>
 <div class="jumbotron p-4" id="profileHeader">
     <h1 class="jumbotron-heading">{{ selected_user.username }}'s Profile</h1>
 </div>
 
 <div class="container" id="profileBody">
     <div class="row">
-        <div>
-            {% if user_profile.picture %}
-                <img id="profileBodyPic" src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="250" height="250" alt="{{ selected_user.username }}'s profile image" />
-            {% else %}
-                <img id="profileBodyPic" src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="250" height="250" alt="Default avatar" />
-            {% endif %}
-        </div>
+
+        {% if user_profile.picture %}
+            <img id="profileBodyPic" src="{{ MEDIA_URL }}{{ user_profile.picture }}" width="250" height="250" alt="{{ selected_user.username }}'s profile image" />
+        {% else %}
+            <img id="profileBodyPic" src="{{ MEDIA_URL }}profile_images/default_avatar.jpg"  width="250" height="250" alt="Default avatar" />
+        {% endif %}
 
         <div class="updateProfile">
             {% if selected_user == user %}
@@ -53,11 +54,15 @@
             </p>
             {% endif %}
         </div>
+
     </div>
 </div>
 
-<div id="profileBottom">
+    <div id="profileBottom">
+    </div>
 
-</div>
+    <div id="profileBottomDec"></div>
 
+</body>
+    </div>
 {% endblock %}
