@@ -22,8 +22,8 @@ urlpatterns = [
     path('register_profile/', views.RegisterProfileView.as_view(), name='register_profile'),
     path('profile/<username>/', views.ProfileView.as_view(), name='profile'),
     path('profiles/', views.ListProfilesView.as_view(), name='list_profiles'),
-    path('aniaml_profile/<animal_name>/', views.AnimalProfileView.as_view(), name='animal_profile'),
+    path('animal_profile/<animal_name>/', views.AnimalProfileView.as_view(), name='animal_profile'),
     path('like_animal/', views.LikeAnimalView.as_view(), name='like_animal'),
-    path('aniaml_profile/<animal_name>/<username>/post_comment', views.CommentPostView, name='post_comment'),
+    path('animal_profile/<animal_name>/<username>/post_comment', views.CommentPostView, name='post_comment'),
 
 ]
