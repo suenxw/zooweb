@@ -44,7 +44,10 @@
                 {% if animals %}
                 <ul class="list-group">
                 {% for animal in animals %}
-                    <li id="indexList" class="list-group-item">{{ animal.animal_name }}</li>
+                    <li id="indexList" class="list-group-item">
+                    <a href="{% url 'rango:animal_profile' animal.animal_name %}">
+                        {{ animal.animal_name }}</a>
+                    </li>
                 {% endfor %}
                 </ul>
                 {% else %}
