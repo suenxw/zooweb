@@ -261,9 +261,8 @@ ul, li{
 }
 
 #addCategory{
-    color: #FFFFFF;
     background-image: url(static/images/wood-green.jpg);
-    height: 25%;
+    height: 20%;
 }
 
 .jumbotron-heading{
@@ -294,9 +293,16 @@ ul, li{
     font-weight: bold;
     font-family: "Heiti SC";
     padding-top: 3%;
-    padding-left: 30%;
+    /*padding-left: 30%;*/
     height: 300px;
+    text-align: center;
     border-radius: 15px;
+}
+
+#addCategoryBottomDec{
+    margin-top: 10px;
+    min-height: 280px;
+    /*visibility: hidden;*/
 }
 
 #test1 body{
