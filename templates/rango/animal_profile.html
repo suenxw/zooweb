@@ -7,7 +7,7 @@
 
 {% block body_block %}
 <div class="jumbotron p-4" id="animalProfileHeader">
-    <h1 class="jumbotron-heading">{{ selected_animal.animal_name }}'s Profile</h1>
+    <h2 class="jumbotron-heading">{{ selected_animal.animal_name }}'s Profile</h2>
 </div>
 
 <div class="container" id="animalProfileContainer">
@@ -17,6 +17,16 @@
                 <img src="{{ MEDIA_URL }}{{ selected_animal.picture }}" width="300" height="300" alt="{{ selected_animal.animal_name }}'s profile image" />
             {% else %}
                 <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="300" height="300" alt="Default animal avatar" />
+            {% endif %}
+        </div>
+
+        <div id="likeButton">
+            <strong id="like_count">{{ selected_animal.likes }}</strong> likes
+            {% if user.is_authenticated %}
+            <button id="like_btn" data-animalid="{{ selected_animal.id }}" class="btn btn-primary btn-sm" type="button">
+                <span data-feather="thumbs-up"></span>
+                Like
+            </button>
             {% endif %}
         </div>
 
@@ -36,18 +46,8 @@
                 </li>
             </ul>
             <hr>
-            <div>
-                <strong id="like_count">{{ selected_animal.likes }}</strong> likes
-                {% if user.is_authenticated %}
-                <button id="like_btn" data-animalid="{{ selected_animal.id }}" class="btn btn-primary btn-sm" type="button">
-                    <span data-feather="thumbs-up"></span>
-                    Like
-                </button>
-                {% endif %}
-            </div>
-
         </div>
-    </div>
+</div>
 
     <section class="comment-area" id="comment-area">
         <br>
@@ -70,7 +70,7 @@
             <div class="p-5"></div>
         </form>
 
-        <div class="comment-list-panel">
+        <div class="comment-list-panel" id="comment-notice">
             <h6>Comment List, total <span>{{ comments.count }}</span></h6>
             <ul class="comment-list list-unstyled">
                 {% for comment in comments %}

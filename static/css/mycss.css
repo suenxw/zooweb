@@ -267,8 +267,9 @@ ul, li{
 }
 
 .jumbotron-heading{
+    margin: 0;
     color: #E9A20B;
-    font-size: 60px;
+    font-size: 40px;
     font-family: "Hiragino Sans";
 }
 .registrationHeading{
@@ -407,7 +408,7 @@ ul, li{
 
 #addAnimalHeader, #animalProfileHeader{
     margin-bottom: 10px;
-    margin-right: 10px;
+    border-radius: 15px;
     background-image: url(static/images/wood-green.jpg);
 }
 
@@ -423,14 +424,26 @@ ul, li{
 }
 
 #animalProfilePic{
+    margin-left: 36%;
     border-radius: 15px;
 }
 
 #animalProfilePic img{
-    color: #E9A20B;
-    position: center;
     padding: 20px;
-    border-radius: 15px;
+}
+
+#likeButton{
+    margin-top: 12%;
+    margin-right: 20%;
+}
+
+#clp li{
+    min-width: 1050px;
+    font-family: Charter;
+    border-width: 2px;
+    border-color: #E9A20B;
+    /*margin-left: 30%;*/
+    text-align: center;
 }
 
 #comment-area #comment-area-header{
@@ -439,6 +452,10 @@ ul, li{
 
 .comment-list-panel{
     padding: 20px;
+}
+
+#comment-notice{
+    margin-top: -5%;
 }
 
 #registrationHeading{
