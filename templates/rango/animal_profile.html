@@ -50,9 +50,6 @@
 </div>
 
     <section class="comment-area" id="comment-area">
-        <br>
-        <hr>
-        <hr>
         <h5 id="comment-area-header">You can post your comments here...</h5>
         <form role="form" id="comment_form" method="post" action="{% url 'rango:post_comment' selected_animal.animal_name user.username %}">
             {% csrf_token %}

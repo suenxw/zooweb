@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block body_block %}
-<div>
+<div id="listProfilesContainer">
 
 <div class="jumbotron p-4" id="listProfilesHeader">
     <h1 class="jumbotron-heading">User Profiles</h1>
@@ -28,7 +28,7 @@
                             {% endif %}
                         </a>
 
-                        username: {{ list_user.user.username }}
+                        User Name: {{ list_user.user.username }}
                     </h4>
                 </div>
             {% endfor %}
@@ -38,8 +38,6 @@
         <p>There are no users present on System.</p>
         {% endif %}
     </div>
-
-
 </div>
 
 <div id="listProfilesDecorator" >

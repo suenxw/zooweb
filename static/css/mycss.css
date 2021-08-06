@@ -14,26 +14,28 @@
 #navDec1,#navDec2,#navDec3,#navbarDropdown1,#navbarDropdown2{
     width: 170px;
     color: black;
+    font-family: Courier;
+    font-weight: bold;
 }
 
 #navDec1{
-    background-color: indianred;
+    background-color: #d38b50;
 }
 
 #navDec2{
-    background-color: purple;
+    background-color: #f7f1e6;
 }
 
 #navDec3{
-    background-color: darkkhaki;
+    background-color: #d8be8d;
 }
 
 #navbarDropdown1{
-    background-color: dodgerblue;
+    background-color: #85c9ab;
 }
 
 #navbarDropdown2{
-    background-color: darkgreen;
+    background-color: #4da17c;
 }
 
 #navDec1:hover,#navDec2:hover,#navDec3:hover,#navbarDropdown1:hover,#navbarDropdown2:hover{
@@ -41,6 +43,7 @@
 }
 
 #navDec5{
+    font-family: Courier;
     text-align: center;
 }
 
@@ -142,7 +145,8 @@ ul, li{
 }
 
 #list_a{
-    padding:0;
+    margin: 0;
+    padding: 0;
     text-indent: -20%;
     font-family: "Academy Engraved LET";
     color: black;
@@ -170,7 +174,7 @@ ul, li{
     position: relative;
     margin-bottom: 20px;
     background-position: 0 80%;
-    zoom: 90%;
+    /*zoom: 90%;*/
     background-image: url("static/images/elephant.jpg");
     border-radius: 15px;
     background-size:cover;
@@ -178,7 +182,7 @@ ul, li{
 
 #welcome_header h1{
     color: #E9A20B;
-    font-family: "Microsoft YaHei";
+    font-family: Courier;
 }
 
 #welcome_header span{
@@ -207,12 +211,13 @@ ul, li{
 }
 
 #indexBottom span{
+    font-family: Courier;
     border-radius: 20px;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
     text-align: center;
-    width: 17%;
+    width: 18%;
     background-color: peru;
     display: inline-block;
 }
@@ -222,12 +227,11 @@ ul, li{
 }
 
 #indexBottom .s1{
-    width: 25%;
     margin-left: 10px;
 }
 
 #indexBottom .s3{
-    width: 20%;
+    width: 22%;
 }
 
 .container{
@@ -301,7 +305,7 @@ ul, li{
 
 #addCategoryBottomDec{
     margin-top: 10px;
-    min-height: 280px;
+    min-height: 320px;
     /*visibility: hidden;*/
 }
 
@@ -310,21 +314,21 @@ ul, li{
 }
 
 .updateProfile{
-    color: #E9A20B;
+    /*color: #E9A20B;*/
     font-weight: bolder;
     font-size: 20px;
     padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 50px;
+    padding-left: 50px;
+    /*padding-right: 50px;*/
 }
 
 #profileHeader{
     margin: 0 10px 10px 0;
     min-height: 100px;
     width: 100%;
-    /*background-position: -140px -240px;*/
     border-radius: 15px;
-    background-image: url("static/images/birds.png");
+    background-image: url("static/images/wood-green.jpg");
+    text-align: center;
 }
 
 #profileBody{
@@ -334,13 +338,13 @@ ul, li{
 }
 
 #profileBodyPic{
-    margin: 15px 15px 15px 60px;
+    margin: 15px 15px 15px 50px;
 }
 
 #profileBottom{
     margin-right: 10px;
     border-radius: 15px;
-    min-height:290px ;
+    min-height:310px ;
     width: 100%;
     background-position: -50px -370px;
     background-image: url("static/images/fish.png");
@@ -349,17 +353,21 @@ ul, li{
 #profileBottomDec{
     overflow: hidden;
     visibility: hidden;
-    min-height: 100px;
+    min-height: 150px;
 }
 
 #listProfilesHeader{
     margin-bottom: 10px;
     padding:0;
     border-radius: 15px;
-    min-height: 350px;
     height: 80%;
     background-position-y: 52%;
-    background-image: url("static/images/listProHe.png");
+    background-image: url("static/images/wood-green.jpg");
+    text-align: center;
+}
+
+#listProfilesContainer{
+    min-height: 820px;
 }
 
 #listProfilesBody{
@@ -399,7 +407,7 @@ ul, li{
 }
 
 .changePasswordDecorator{
-    min-height: 420px;
+    min-height: 450px;
     background-position-y: 70%;
     background-image: url(static/images/deer.png);
     border-radius: 15px;
@@ -424,13 +432,14 @@ ul, li{
 }
 
 #addAnimalBody{
-    margin: 0;
+    margin-bottom: 20px;
     border-radius: 15px;
     padding: 40px;
 }
 
 #animalProfilePic{
-    margin-left: 36%;
+    margin-left: 35%;
+
     border-radius: 15px;
 }
 
@@ -440,16 +449,29 @@ ul, li{
 
 #likeButton{
     margin-top: 12%;
-    margin-right: 20%;
+    margin-right: 8%;
+}
+
+#clp{
+    position:relative;
+    left:50%;
+    width:800px;
+    height:400px;
+    margin-left:-400px;
+    display: block;
 }
 
 #clp li{
-    min-width: 1050px;
+    min-width: auto;
     font-family: Charter;
     border-width: 2px;
     border-color: #E9A20B;
     /*margin-left: 30%;*/
     text-align: center;
+}
+
+#comment-area{
+    margin-top: -4%;
 }
 
 #comment-area #comment-area-header{
@@ -474,7 +496,7 @@ ul, li{
 
 #registrationForm{
     padding: 10px 10px 10px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
 }
 
 #form-group-input{
@@ -485,8 +507,8 @@ ul, li{
 
 #registrationForm_step2{
     padding: 50px;
-    min-height: 600px;
-    margin-bottom: 10px;
+    min-height: 650px;
+    margin-bottom: 20px;
 }
 
 #loginHeader{
@@ -510,7 +532,7 @@ ul, li{
 #searchContainer{
     background-image: url("static/images/wood-sand.jpg");
     border-radius: 15px;
-    min-height: 625px;
+    min-height: 660px;
     margin-bottom: 10px;
 }
 
@@ -573,7 +595,7 @@ ul, li{
 }
 
 #bottomDec{
-    min-height: 125px;
+    min-height: 160px;
 }
 
 #Password_changed{
@@ -584,7 +606,7 @@ ul, li{
     font-family: "Heiti SC";
     font-size: 30px;
     color: #E9A20B;
-    padding-top: 50px;
-    padding-bottom: 605px;
+    padding-top: 100px;
+    padding-bottom: 650px;
     text-align: center;
 }

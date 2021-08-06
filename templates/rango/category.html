@@ -47,9 +47,9 @@
                             <h2 class="list-group-item-heading">
                                <a href="{% url 'rango:animal_profile' animal.animal_name %}">
                                     {% if animal.picture %}
-                                        <img src="{{ MEDIA_URL }}{{ animal.picture }}" width="64" height="64" alt="Profile picture for {{ animal.animal_name }}" />
+                                        <img src="{{ MEDIA_URL }}{{ animal.picture }}" width="100" height="100" alt="Profile picture for {{ animal.animal_name }}" />
                                     {% else %}
-                                        <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="64" height="64" alt="Default animal avatar" />
+                                        <img src="{{ MEDIA_URL }}animals_images/default_animal_avatar.png" width="100" height="100" alt="Default animal avatar" />
                                     {% endif %}
                                 </a>
                             </h2>
