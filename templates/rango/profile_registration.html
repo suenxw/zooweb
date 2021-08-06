@@ -6,14 +6,12 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="jumbotron p-4">
-    <div class="container">
-        <h1 class="jumbotron-heading">Register Here - Step 2</h1>
-    </div>
+<div class="jumbotron p-4" id="registrationHeading">
+    <h1 class="jumbotron-heading">Register Here - Step 2</h1>
 </div>
 
-<div class="container">
-    <div class="row">
+<div class="container" id="registrationForm_step2">
+    <div class="row" >
         <form method="post" action="{% url 'rango:register_profile' %}" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form.as_p }}

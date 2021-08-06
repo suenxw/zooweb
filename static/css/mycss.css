@@ -477,6 +477,12 @@ ul, li{
     border-color: #E9A20B;
 }
 
+#registrationForm_step2{
+    padding: 50px;
+    min-height: 600px;
+    margin-bottom: 10px;
+}
+
 #loginHeader{
     text-indent: 8px;
     border-radius: 15px;
